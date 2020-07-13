@@ -17,5 +17,3 @@ def fun_getinrange(x, bound1, bound2):
 	
 	if x > upper_bound:
 		return upper_bound
-
-	return -1
