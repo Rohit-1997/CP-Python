@@ -6,5 +6,7 @@
 # how can you determine the longest side, and how might that help?
 
 def islegaltriangle(s1, s2, s3):
-	# your code goes here
-	pass
+	sides = [s1, s2, s3]
+	longest_side = sides.pop(sides.index(max(sides)))
+	print("The longest side: ", longest_side)
+	
