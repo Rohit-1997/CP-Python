@@ -13,3 +13,6 @@ def isevenpositiveint(x):
 			return False
 	except:
 		return False
+
+
+print(isevenpositiveint("yikes"))
