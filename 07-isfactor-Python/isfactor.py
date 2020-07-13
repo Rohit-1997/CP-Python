@@ -6,4 +6,4 @@
 
 
 def fun_isfactor(f, n):
-	return (f%n == 0)
+	return f%n == 0
