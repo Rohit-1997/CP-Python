@@ -14,3 +14,9 @@ def handtodice(hand):
 		list_data.append(num%10)
 		num = num//10
 	return tuple(list_data)
+
+print(123)
+print(214)
+print(422)
+print(400)
+print(101)
