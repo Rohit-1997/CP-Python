@@ -32,7 +32,8 @@ class Classy(object):
             return 0
         score = 0
         for item in self.items:
-            score += self.item_data[item]
+            if item in self.item_data:
+                score += self.item_data[item]
         return score
 
     
