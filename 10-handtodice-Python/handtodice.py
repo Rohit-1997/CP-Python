@@ -15,8 +15,8 @@ def handtodice(hand):
 		num = num//10
 	return tuple(list_data)
 
-print(123)
-print(214)
-print(422)
-print(400)
-print(101)
+print(handtodice(123))
+print(handtodice(214))
+print(handtodice(422))
+print(handtodice(400))
+print(handtodice(101))
