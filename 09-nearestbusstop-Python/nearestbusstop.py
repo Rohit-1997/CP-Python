@@ -14,15 +14,17 @@ def fun_nearestbusstop(street):
 	first_stop = street - prev_street
 	next_stop = next_street - street
 
+	print(first_stop, next_stop)
+
 	if first_stop <= next_stop:
 		return prev_street
 	else:
 		return next_street
 
 print(fun_nearestbusstop(12))
-print(fun_nearestbusstop(8))
-print(fun_nearestbusstop(13))
-print(fun_nearestbusstop(0))
-print(fun_nearestbusstop(5))
-print(fun_nearestbusstop(16))
-print(fun_nearestbusstop(4))
+# print(fun_nearestbusstop(8))
+# print(fun_nearestbusstop(13))
+# print(fun_nearestbusstop(0))
+# print(fun_nearestbusstop(5))
+# print(fun_nearestbusstop(16))
+# print(fun_nearestbusstop(4))
