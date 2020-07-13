@@ -16,12 +16,12 @@ def dicetoorderedhand(a, b, c):
 	right = str(min(a,b,c))
 	
 	if str(a) != left and str(a) != right:
-		return left  + str(a) + right
+		return int(left  + str(a) + right)
 
 	if str(b) != left and str(b) != right:
-		return left + str(b) + right
+		return int(left + str(b) + right)
 
-	return left + str(c) + right
+	return int(left + str(c) + right)
 
 
 print(dicetoorderedhand(1,2,3))
