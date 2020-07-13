@@ -12,14 +12,14 @@
 # min(a,b,c) to find the smallest.
 
 def dicetoorderedhand(a, b, c):
-	left = max(a,b,c)
-	right = min(a,b,c)
+	left = str(max(a,b,c))
+	right = str(min(a,b,c))
 	
 	if a != left and a != right:
-		return (left, a, right)
+		return left + right + str(a)
 
 	if b != left and b != right:
-		return (left, b, right)
+		return left + right + str(b)
 
-	return (left, c, right)
+	return left + right + str(c)
 		
