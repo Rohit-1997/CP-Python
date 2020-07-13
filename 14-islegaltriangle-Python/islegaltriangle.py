@@ -9,7 +9,7 @@ def islegaltriangle(s1, s2, s3):
 	sides = [s1, s2, s3]
 	longest_side = sides.pop(sides.index(max(sides)))
 	print("The longest side: ", longest_side)
-	if sum(sides) == longest_side:
+	if sum(sides) > longest_side:
 		return True
 	return False
 
