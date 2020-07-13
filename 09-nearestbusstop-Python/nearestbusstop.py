@@ -5,7 +5,17 @@
 # so the nearest bus stop to 12th street is 8th street, 
 # and the nearest bus stop to 13 street is 16th street.
 
+import math
 
 
 def fun_nearestbusstop(street):
-	return -1
+	prev_street = int(math.ceil(street/8) * 8)
+	next_street = prev_street + 8
+	first_stop = street - prev_street
+	next_stop = next_street - street
+
+	if first_stop <= next_stop:
+		return prev_street
+	else:
+		return next_street
+
