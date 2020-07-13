@@ -17,3 +17,9 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	distance_13 = find_distance(x1, y1, x3, y3)
 	distance_23 = find_distance(x2, y2, x3, y3)
 
+	sides = [distance_12, distance_13, distance_23]
+	longest = sides.pop(sides.index(max(sides)))
+
+	sides_sum = (sides[0]**2) + (sides[1] ** 2)
+	return math.isclose(sides_sum, longest**2)
+
