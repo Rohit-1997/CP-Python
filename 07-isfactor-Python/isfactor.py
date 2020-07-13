@@ -8,9 +8,8 @@
 def fun_isfactor(f, n):
 	if f == 0 and n == 0:
 		return True
-	# every number is a factor of zero
 	if f == 0:
-		return True
+		return False
 	return n%abs(f) == 0
 
 
