@@ -24,5 +24,5 @@ def dicetoorderedhand(a, b, c):
 	return left + str(c) + right
 
 
-print(dicetoorderedhand(6,5,6))
+print(dicetoorderedhand(1,2,3))
 		
