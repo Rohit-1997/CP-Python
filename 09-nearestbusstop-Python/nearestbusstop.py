@@ -9,7 +9,7 @@ import math
 
 
 def fun_nearestbusstop(street):
-	prev_street = int(math.ceil(street/8) * 8)
+	prev_street = int(math.floor(street/8) * 8)
 	next_street = prev_street + 8
 	first_stop = street - prev_street
 	next_stop = next_street - street
