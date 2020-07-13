@@ -15,10 +15,10 @@ def dicetoorderedhand(a, b, c):
 	left = str(max(a,b,c))
 	right = str(min(a,b,c))
 	
-	if a != left and a != right:
+	if str(a) != left and str(a) != right:
 		return left  + str(a) + right
 
-	if b != left and b != right:
+	if str(b) != left and str(b) != right:
 		return left + str(b) + right
 
 	return left + str(c) + right
