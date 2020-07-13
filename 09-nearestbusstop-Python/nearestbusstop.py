@@ -14,8 +14,8 @@ def fun_nearestbusstop(street):
 	first_stop = street - prev_street
 	next_stop = next_street - street
 
-	print(prev_street, next_street)
-	print(first_stop, next_stop)
+	# print(prev_street, next_street)
+	# print(first_stop, next_stop)
 
 	if first_stop <= next_stop:
 		return prev_street
