@@ -15,4 +15,14 @@ def isevenpositiveint(x):
 		return False
 
 
-print(isevenpositiveint("yikes"))
+print(isevenpositiveint(1))
+print(isevenpositiveint(-1))
+print(isevenpositiveint(-2))
+print(isevenpositiveint(-3))
+print(isevenpositiveint(2))
+print(isevenpositiveint(3))
+print(isevenpositiveint(1.0))
+print(isevenpositiveint(None))
+print(isevenpositiveint((12)))
+print(isevenpositiveint([12]))
+print(isevenpositiveint(123456))
