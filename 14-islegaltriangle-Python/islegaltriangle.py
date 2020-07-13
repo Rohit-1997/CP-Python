@@ -12,3 +12,6 @@ def islegaltriangle(s1, s2, s3):
 	if sum(sides) == longest_side:
 		return True
 	return False
+
+
+print(islegaltriangle(1,2,3))
