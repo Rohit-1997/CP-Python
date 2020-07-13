@@ -6,4 +6,10 @@
 
 def isevenpositiveint(x):
 	# your code goes here
-	pass
+	try:
+		if int(x) == x and x%2 == 0 and x >= 0:
+			return True
+		else:
+			return False
+	except:
+		return False
