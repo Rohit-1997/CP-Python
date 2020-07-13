@@ -7,7 +7,7 @@
 import math
 
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
-	res = ((x2-x1) * (x2-x1)) + ((y2-y1) * (y2-y1))
+	res = ((x1-x2) * (x1-x2)) + ((y1-y2) * (y1-y2))
 	distance = int(math.sqrt(res))
 	print(distance)
 	total_radius = r1 + r2
