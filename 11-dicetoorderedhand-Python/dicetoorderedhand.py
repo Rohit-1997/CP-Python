@@ -25,4 +25,8 @@ def dicetoorderedhand(a, b, c):
 
 
 print(dicetoorderedhand(1,2,3))
+print(dicetoorderedhand(6,5,4))
+print(dicetoorderedhand(1,4,2))
+print(dicetoorderedhand(6,5,6))
+print(dicetoorderedhand(2,2,2))
 		
