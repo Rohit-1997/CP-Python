@@ -13,10 +13,10 @@ def fun_isfactor(f, n):
 	return n%abs(f) == 0
 
 
-print(fun_isfactor(2,2))
-print(fun_isfactor(2,5))
-print(fun_isfactor(2,4))
-print(fun_isfactor(0,6))
-print(fun_isfactor(6,0))
-print(fun_isfactor(0,0))
-print(fun_isfactor(-2,4))
+# print(fun_isfactor(2,2))
+# print(fun_isfactor(2,5))
+# print(fun_isfactor(2,4))
+# print(fun_isfactor(0,6))
+# print(fun_isfactor(6,0))
+# print(fun_isfactor(0,0))
+# print(fun_isfactor(-2,4))
