@@ -13,4 +13,7 @@ def find_distance(x1,y1,x2,y2):
 
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
-	pass
+	distance_12 = find_distance(x1, y1, x2, y2)
+	distance_13 = find_distance(x1, y1, x3, y3)
+	distance_23 = find_distance(x2, y2, x3, y3)
+
