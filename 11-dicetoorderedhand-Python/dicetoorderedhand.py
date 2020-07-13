@@ -22,4 +22,7 @@ def dicetoorderedhand(a, b, c):
 		return left + right + str(b)
 
 	return left + right + str(c)
+
+
+print(dicetoorderedhand(6,5,6))
 		
