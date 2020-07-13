@@ -11,7 +11,7 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	distance = int(math.sqrt(res))
 	print(distance)
 	total_radius = r1 + r2
-	if total_radius == distance:
+	if total_radius == distance or total_radius > distance:
 		return True
 	return False 
 
