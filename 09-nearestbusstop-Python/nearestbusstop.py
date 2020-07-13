@@ -23,9 +23,9 @@ def fun_nearestbusstop(street):
 		return next_street
 
 print(fun_nearestbusstop(12))
-# print(fun_nearestbusstop(8))
-# print(fun_nearestbusstop(13))
-# print(fun_nearestbusstop(0))
-# print(fun_nearestbusstop(5))
-# print(fun_nearestbusstop(16))
-# print(fun_nearestbusstop(4))
+print(fun_nearestbusstop(8))
+print(fun_nearestbusstop(13))
+print(fun_nearestbusstop(0))
+print(fun_nearestbusstop(5))
+print(fun_nearestbusstop(16))
+print(fun_nearestbusstop(4))
