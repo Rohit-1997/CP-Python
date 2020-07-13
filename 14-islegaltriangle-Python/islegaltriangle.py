@@ -15,3 +15,8 @@ def islegaltriangle(s1, s2, s3):
 
 
 print(islegaltriangle(1,2,3))
+print(islegaltriangle(7,10,5))
+print(islegaltriangle(1,10,12))
+print(islegaltriangle(1.1,2.1,3.2))
+print(islegaltriangle(7.9, 10.1, 5.9))
+print(islegaltriangle(1.00012, 10.0009090, 12.0000001))
