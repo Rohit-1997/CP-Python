@@ -11,7 +11,7 @@ def handtodice(hand):
 	num = hand
 	
 	while num != 0:
-		list_data.append(num%10)
+		list_data.insert(0, num%10)
 		num = num//10
 	return tuple(list_data)
 
