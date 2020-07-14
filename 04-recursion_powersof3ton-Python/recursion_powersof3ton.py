@@ -5,6 +5,10 @@
 
 def helper(result, power, n):
 	current = 3**power
+	if current > n:
+		return
+	result.append(current)
+	helper(result, power+1, n)
 
 
 
