@@ -31,8 +31,6 @@ def helper(l, index, result):
 
 	
 
-
-
 def fun_recursion_onlyevendigits(l):
 	if l == []:
 		return []
