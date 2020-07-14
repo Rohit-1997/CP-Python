@@ -10,12 +10,13 @@ def helper(result, power, n):
 	result.append(current)
 	helper(result, power+1, n)
 
-
-
-
 def recursion_powersof3ton(n):
 	if n == 0:
 		return []
 	result = []
 	helper(result, 0, n)
+	# print(result)
+	return result
 
+
+print(recursion_powersof3ton(10.5))
