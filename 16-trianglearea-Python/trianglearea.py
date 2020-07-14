@@ -14,4 +14,9 @@ def isValid(s1,s2,s3):
 def trianglearea(s1, s2, s3):
 	# your code goes here
 	valid = isValid(s1,s2,s3)
+	if not valid:
+		return 0
+	s = (s1 + s2 + s3) / 2
+	area = math.sqrt(s * ((s-s1)*(s-s2)*(s-s3)))
+	return area
 
