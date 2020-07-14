@@ -21,6 +21,7 @@ def helper(l, index, result):
 	if index == len(l):
 		return
 	even_num = number_breakdown(l[index], 1)
+	print("The result after breaking down: ", even_num)
 	result.append(even_num)
 	helper(l, index+1, result)
 
