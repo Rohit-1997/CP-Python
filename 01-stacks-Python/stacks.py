@@ -31,6 +31,10 @@ class LinkedList(object):
             self.head = new_element
             return
         
+        # List is not empty
+        prev_first = self.head
+        self.head = new_element
+        self.head.next = prev_first
 
 
     def delete_first(self):
