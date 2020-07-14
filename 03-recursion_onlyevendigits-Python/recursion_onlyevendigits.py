@@ -13,6 +13,7 @@ def number_breakdown(number,mp):
 	if number == 0:
 		return 0
 	units = number % 10
+	print("The units: ", units)
 	if units % 2 == 0:
 		return (units * mp) + number_breakdown(number//10, mp*10)
 
