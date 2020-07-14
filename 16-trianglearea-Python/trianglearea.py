@@ -2,11 +2,11 @@
 # Write the function trianglearea(s1, s2, s3) that takes 3 floats/ints and returns the area of the
 # triangle that has those lengths of its side. If no such triangle exists, return 0. Hint: you
 # will probably wish to use Heron's Formula.
-
+import math
 
 def isValid(s1,s2,s3):
 	sides = [s1,s2,s3]
-	logest = sides.pop(sides.index(max(sides)))
+	longest = sides.pop(sides.index(max(sides)))
 	return sum(sides) > longest
 
 
@@ -20,3 +20,5 @@ def trianglearea(s1, s2, s3):
 	area = math.sqrt(s * ((s-s1)*(s-s2)*(s-s3)))
 	return area
 
+
+print(trianglearea(4,13,15))
