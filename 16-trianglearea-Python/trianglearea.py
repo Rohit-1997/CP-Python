@@ -4,6 +4,14 @@
 # will probably wish to use Heron's Formula.
 
 
+def isValid(s1,s2,s3):
+	sides = [s1,s2,s3]
+	logest = sides.pop(sides.index(max(sides)))
+	return sum(sides) > longest
+
+
+
 def trianglearea(s1, s2, s3):
 	# your code goes here
-	pass
+	valid = isValid(s1,s2,s3)
+
