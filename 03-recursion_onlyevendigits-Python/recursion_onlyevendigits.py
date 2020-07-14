@@ -18,7 +18,7 @@ def number_breakdown(number,mp):
 		res = (units * mp) + number_breakdown(number//10, mp*10)
 		print("The step result: ", res)
 		return res
-	return number_breakdown(number//10, mp*10)
+	return number_breakdown(number//10, mp)
 
 
 def helper(l, index, result):
