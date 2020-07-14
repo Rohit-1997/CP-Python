@@ -15,7 +15,6 @@ def recursion_powersof3ton(n):
 		return []
 	result = []
 	helper(result, 0, n)
-	# print(result)
 	return result
 
 
