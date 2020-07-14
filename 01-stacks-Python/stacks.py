@@ -71,4 +71,4 @@ stack = stack(e1)
 # Test stack functionality
 stack.push(e2)
 stack.push(e3)
-    
+print(stack.pop())
