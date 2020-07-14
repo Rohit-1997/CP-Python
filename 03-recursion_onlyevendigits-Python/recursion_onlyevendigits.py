@@ -40,5 +40,5 @@ def fun_recursion_onlyevendigits(l):
 	helper(l,0, result)
 	print(result)
 
-print(fun_recursion_onlyevendigits([23265]))
+fun_recursion_onlyevendigits([23265])
 # print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
