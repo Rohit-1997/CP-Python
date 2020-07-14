@@ -11,7 +11,7 @@ def helper(result, power, n):
 	helper(result, power+1, n)
 
 def recursion_powersof3ton(n):
-	if n == 0:
+	if n < 1:
 		return []
 	result = []
 	helper(result, 0, n)
