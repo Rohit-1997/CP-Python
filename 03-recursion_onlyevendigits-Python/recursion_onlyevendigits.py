@@ -8,7 +8,32 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
+def number_breakdown(number,mp):
+	print("The number: ", number)
+	if number == 0:
+		return 0
+	units = number % 10
+	if units % 2 == 0:
+		return (units * mp) + number_breakdown(number//10, mp*10)
+
+
+def helper(l, index, result):
+	if index == len(l):
+		return
+	even_num = number_breakdown(l[index], 1)
+	result.append(even_num)
+	helper(l, index+1, result)
+
+	
+
+
+
 def fun_recursion_onlyevendigits(l):
 	if l == []:
 		return []
-	
+	result = []
+	helper(l,0, result)
+	print(result)
+
+print(fun_recursion_onlyevendigits([23265]))
+# print(fun_recursion_onlyevendigits([43, 23265, 17, 58344]))
