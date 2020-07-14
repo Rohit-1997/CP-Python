@@ -13,3 +13,8 @@ def lineintersection(m1, b1, m2, b2):
 
 
 print(lineintersection(4,13,8,17))
+print(lineintersection(2,13,2,14))
+print(lineintersection(8,13,4,17))
+print(lineintersection(4,13,3,17))
+print(lineintersection(4,27,9,17))
+
