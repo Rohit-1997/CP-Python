@@ -6,10 +6,10 @@
 
 def lineintersection(m1, b1, m2, b2):
 	# your code goes here
-	d = (-m1) - (-m2)
-	if d == 0:
+	if m1 == m2:
 		return None
-	return ((b1-b2)/d)
+	x = (b1 + b2) / (m1 - m2)
+	return x
 
 
 print(lineintersection(4,13,8,17))
