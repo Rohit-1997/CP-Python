@@ -44,7 +44,7 @@ class LinkedList(object):
             return
         prev_first = self.head
         self.head = self.head.next
-        del prev_first
+        return prev_first
 
 class stack(object):
     def __init__(self,top=None):
