@@ -30,6 +30,7 @@ def recursion_secondlargest(L):
 	if L == [] or len(L) == 1:
 		return None
 	current_max,prev_max = helper(L,1,L[0],L[0])
+	print("The max values: ", current_max, prev_max)
 	return prev_max
 
 print(recursion_secondlargest([1,2,3,4,5]))
