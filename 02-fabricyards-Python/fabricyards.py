@@ -26,13 +26,13 @@ def fun_fabricexcess(inches):
 	res = fun_fabricyards(inches)
 	return res - inches
 
-print(fun_fabricyards(0))
-print(fun_fabricyards(1))
-print(fun_fabricyards(35))
-print(fun_fabricyards(36))
-print(fun_fabricyards(37))
-print(fun_fabricyards(38))
-print(fun_fabricyards(72))
-print(fun_fabricyards(73))
+print(fun_fabricexcess(0))
+print(fun_fabricexcess(1))
+print(fun_fabricexcess(35))
+print(fun_fabricexcess(36))
+print(fun_fabricexcess(37))
+print(fun_fabricexcess(38))
+print(fun_fabricexcess(72))
+print(fun_fabricexcess(73))
 
 
