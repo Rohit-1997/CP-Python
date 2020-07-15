@@ -9,10 +9,10 @@ def fun_numberofpoolballrows(balls):
 	ballcount = 0
 	row_counter = 0
 
-	while ballcount <= balls:
+	while ballcount < balls:
 		row_counter += 1
 		ballcount += (1*row_counter)
 	return row_counter
 
 
-print(fun_numberofpoolballrows(500500))
+print(fun_numberofpoolballrows(1))
