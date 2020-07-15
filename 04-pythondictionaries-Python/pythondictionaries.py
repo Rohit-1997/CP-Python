@@ -39,6 +39,7 @@ def alphaAsia():
     for city in city_list:
         ele = city + " - " + 'India'
         result.append(ele)
+    return result
     
         
     
