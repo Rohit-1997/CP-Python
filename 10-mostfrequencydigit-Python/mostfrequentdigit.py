@@ -4,6 +4,8 @@
 from collections import defaultdict
 
 def mostfrequentdigit(n):
+	if n == 0:
+		return 0
 	dict_data = defaultdict(int)
 	n = abs(n)
 	result = []
@@ -20,3 +22,5 @@ def mostfrequentdigit(n):
 			result.append(key)
 
 	return min(result)
+
+print(mostfrequentdigit(0))
