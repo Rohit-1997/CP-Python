@@ -32,8 +32,7 @@ def helper(L,low,high,result,found,v):
 		
 def recursion_binarysearchvalues(L, v):
 	result = []
-	low = 0
-	high = len(l) - 1
-	search_res = helper(L,low,high,result,False,v)
+	search_res = helper(L,0,len(L)-1,result,False,v)
+	return result
 
 	
