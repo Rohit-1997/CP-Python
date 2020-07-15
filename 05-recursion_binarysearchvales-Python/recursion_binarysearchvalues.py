@@ -21,6 +21,7 @@ def helper(L,low,high,result,found,v):
 	if not found and low > high:
 		return found
 	mid = (low + high) // 2
+	print("The mid and mid value: ", mid, L[mid])
 	result.append((mid, L[mid]))
 	if L[mid] == v:
 		found = True
