@@ -15,4 +15,4 @@ def fun_numberofpoolballrows(balls):
 	return row_counter
 
 
-print(fun_numberofpoolballrows(6))
+print(fun_numberofpoolballrows(7))
