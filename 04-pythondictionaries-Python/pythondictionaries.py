@@ -49,7 +49,7 @@ def sortUSA():
 
 
 locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia': {'India': ['Bangalore'], 'China': ['Shanghai']}, 'Africa': {'Egypt': ['Cairo']}}
-print(locations['North America']['USA'])
+# print(locations['North America']['USA'])
 print(alphaAsia())
 print(sortUSA())
 
