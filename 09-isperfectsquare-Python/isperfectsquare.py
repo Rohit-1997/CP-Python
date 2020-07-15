@@ -12,4 +12,6 @@ def isperfectsquare(n):
 		return int(res) != res
 	except:
 		return False
+
+print(isperfectsquare(625))
 	
