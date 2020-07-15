@@ -15,17 +15,21 @@
 
 def helper(L,index,current_max, prev_max):
 	if index == len(L):
-		return current_max, prev_max
+		print("Im here")
+		return prev_max
 	if L[index] > current_max:
 		prev_max = current_max
 		current_max = L[index]
 	elif L[index] > prev_max and L[index] < current_max:
 		prev_max = L[index]
-
+	print("The current max and prev max: ", current_max, prev_max)
+	helper(L,index+1,current_max,prev_max)
 
 
 def recursion_secondlargest(L):
 	if L == [] or len(L) == 1:
 		return None
-	current_max, prev_max = helper(L,1,L[0],L[0])
+	prev_max = helper(L,1,L[0],L[0])
 	return prev_max
+
+print(recursion_secondlargest([1,2,3,4,5]))
