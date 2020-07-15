@@ -13,6 +13,7 @@
 # assert(ishappynumber(98) == False)
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
+from collections import defaultdict
 
 def helper(number):
 	sum = 0
@@ -24,5 +25,17 @@ def helper(number):
 
 
 def ishappynumber(n):
-	# your code goes here
-	pass
+	if n == 1:
+		return True
+
+	dict_data = defaultdict(int)
+	while True:
+		sum = helper(n)
+		if sum == 1:
+			return True
+		if sum in dict_data:
+			return False
+		dict_data[sum] = 1
+	
+	return False
+
