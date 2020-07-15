@@ -11,3 +11,5 @@ import math
 def largestperfectsquare(n):
 	res =  int(math.floor(math.sqrt(n)))
 	return res*res
+
+print(largestperfectsquare(25))
