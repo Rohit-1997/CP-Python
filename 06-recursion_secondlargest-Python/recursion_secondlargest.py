@@ -14,6 +14,8 @@
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 
 def helper(L,index,current_max, prev_max):
+	if index == len(L):
+		return current_max, prev_max
 	if L[index] > current_max:
 		prev_max = current_max
 		current_max = L[index]
