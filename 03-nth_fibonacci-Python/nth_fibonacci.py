@@ -8,6 +8,8 @@
 
 
 def fun_nthfibonaccinumber(n):
+	if n < 0:
+		return None
 	if n == 1:
 		return 0
 	if n == 2:
