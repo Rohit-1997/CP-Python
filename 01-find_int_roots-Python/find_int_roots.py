@@ -9,7 +9,9 @@
 import math
 def fun_find_int_roots(a, b, c):
 	root_one = int(-b + math.sqrt((b**2) - (4*a*c))) / (2*a)
-	root_two = int(-b - math.sqrt((b**2) - (2*a*c))) / (2*a)
-	return root_one
+	root_two = int(-b - math.sqrt((b**2) - (4*a*c))) / (2*a)
+	if root_one <= root_two:
+		return root_one, root_two
+	return root_two, root_one
 
 print(fun_find_int_roots(1,-5,6))
