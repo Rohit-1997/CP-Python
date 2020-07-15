@@ -15,3 +15,5 @@ def fun_nthfibonaccinumber(n):
 	if n == 2:
 		return 1
 	return fun_nthfibonaccinumber(n-1) + fun_nthfibonaccinumber(n-2)
+
+print(fun_nthfibonaccinumber(1))
