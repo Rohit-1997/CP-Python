@@ -24,7 +24,7 @@ def fun_fabricexcess(inches):
 	if inches == 0:
 		return 0
 	res = fun_fabricyards(inches)
-	return res - inches
+	return (36*res) - inches
 
 print(fun_fabricexcess(0))
 print(fun_fabricexcess(1))
