@@ -34,8 +34,13 @@ Asian City - Country"""
 def alphaAsia():
     result = []
     asia_data = locations['Asia']
-    for key in asia_data:
-        print(key,":",asia_data[key])
+    city_list = asia_data['India']
+    city_list.sort()
+    for city in city_list:
+        ele = city + " - " + 'India'
+        result.append(ele)
+    
+        
     
 
 
