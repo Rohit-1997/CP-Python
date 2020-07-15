@@ -28,7 +28,7 @@ def helper(L,index,current_max, prev_max):
 def recursion_secondlargest(L):
 	if L == [] or len(L) == 1:
 		return None
-	current_max,prev_max = helper(L,1,L[0],L[0])
+	current_max,prev_max = helper(L,0,-100,-100)
 	print("The max values: ", current_max, prev_max)
 	return prev_max
 
