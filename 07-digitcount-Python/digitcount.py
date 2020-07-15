@@ -11,4 +11,7 @@ def digitcount(n):
 
 	while n > 0:
 		counter += 1
-		counter = counter // 10
+		n = n // 10
+	return counter
+
+print(digitcount(12323))
