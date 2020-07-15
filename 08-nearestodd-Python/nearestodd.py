@@ -9,7 +9,7 @@ def fun_nearestodd(n):
 		return res
 	res_one = res - 1
 	res_two = res + 1
-	if (n-res_one) < (res_two - n):
+	if (n-res_one) <= (res_two - n):
 		return res_one
 	else:
 		return res_two
