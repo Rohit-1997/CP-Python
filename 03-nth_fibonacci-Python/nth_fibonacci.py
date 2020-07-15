@@ -10,10 +10,10 @@
 def fun_nthfibonaccinumber(n):
 	if n < 0:
 		return -1
-	if n == 1:
+	if n == 0:
 		return 0
-	if n == 2:
+	if n == 1:
 		return 1
 	return fun_nthfibonaccinumber(n-1) + fun_nthfibonaccinumber(n-2)
 
-print(fun_nthfibonaccinumber(1))
+print(fun_nthfibonaccinumber(0))
