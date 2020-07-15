@@ -15,7 +15,6 @@
 
 def helper(L,index,current_max, prev_max):
 	if index == len(L):
-		print("Im here")
 		return (current_max,prev_max)
 	if L[index] > current_max:
 		prev_max = current_max
