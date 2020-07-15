@@ -14,6 +14,15 @@
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
 
+def helper(number):
+	sum = 0
+	while number > 0:
+		digit = number % 10
+		sum += (digit**2)
+		number = number // 10
+	return sum
+
+
 def ishappynumber(n):
 	# your code goes here
 	pass
