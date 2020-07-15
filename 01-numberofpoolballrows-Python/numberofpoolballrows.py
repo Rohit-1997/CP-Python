@@ -6,8 +6,17 @@
 # numberOfPoolBallRows(7) returns 4 (since the 4th row must have a single ball in it).
 
 def fun_numberofpoolballrows(balls):
-	counter = 0
-
-	while counter < balls:
-		counter += counter + 1
+	ball_count = 0
+	total_rows = 0
+	row_coutner = 1
+	done = False
+	
+	while not done:
+		for i in range(row_coutner):
+			if ball_count == balls:
+				done = True
+			ball_count += 1
+		row_coutner += 1
+		
+		 
 
