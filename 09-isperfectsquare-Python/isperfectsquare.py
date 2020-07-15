@@ -8,7 +8,8 @@ def isperfectsquare(n):
 	try:
 		if n < 0 or int(n) != n:
 			return False
-
+		res = math.sqrt(n)
+		return int(res) != res
 	except:
 		return False
 	
