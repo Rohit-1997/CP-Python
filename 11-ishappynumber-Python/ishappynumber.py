@@ -31,6 +31,7 @@ def ishappynumber(n):
 	dict_data = defaultdict(int)
 	while True:
 		sum = helper(n)
+		print(sum)
 		if sum == 1:
 			return True
 		if sum in dict_data:
