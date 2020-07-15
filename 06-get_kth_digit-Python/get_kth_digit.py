@@ -14,9 +14,11 @@ def fun_get_kth_digit(digit, k):
 	print(result)
 	return result
 
-print(fun_get_kth_digit(789, 0))
-print(fun_get_kth_digit(789, 1))
-print(fun_get_kth_digit(789, 2))
-print(fun_get_kth_digit(789, 0))
-print(fun_get_kth_digit(789, 0))
-print(fun_get_kth_digit(789, 0))
+
+print(fun_get_kth_digit(789, 3))
+# print(fun_get_kth_digit(789, 0))
+# print(fun_get_kth_digit(789, 1))
+# print(fun_get_kth_digit(789, 2))
+# print(fun_get_kth_digit(789, 0))
+# print(fun_get_kth_digit(789, 0))
+# print(fun_get_kth_digit(789, 0))
