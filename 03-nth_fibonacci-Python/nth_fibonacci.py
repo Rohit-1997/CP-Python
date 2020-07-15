@@ -19,4 +19,3 @@ def fun_nthfibonaccinumber(n):
 print(fun_nthfibonaccinumber(0))
 print(fun_nthfibonaccinumber(1))
 print(fun_nthfibonaccinumber(2))
-print(fun_nthfibonaccinumber(3))
