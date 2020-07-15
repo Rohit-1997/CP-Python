@@ -38,7 +38,7 @@ def alphaAsia():
         for city in asia_data[key]:
             ele = city + " - " + key
             result.append(ele)
-    print(result)
+    # print(result)
     return result
     
         
