@@ -24,7 +24,6 @@ def fun_numberofpoolballrows(balls):
 
 	print("The row count: ", total_rows)
 	return total_rows
-	
-		
-		 
 
+
+print(fun_numberofpoolballrows(6))
