@@ -11,7 +11,7 @@ def fun_get_kth_digit(digit, k):
 		result = digit % 10
 		digit = digit//10
 		counter += 1
-	print(result)
+	# print(result)
 	return result
 
 
