@@ -45,9 +45,10 @@ def alphaAsia():
 def sortUSA():
     city_list = locations['North America']['USA']
     return city_list.sort()
-          
+
 
 locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia': {'India': ['Bangalore'], 'China': ['Shanghai']}, 'Africa': {'Egypt': ['Cairo']}}
 print(locations['North America']['USA'])
 print(alphaAsia())
+print(sortUSA())
 
