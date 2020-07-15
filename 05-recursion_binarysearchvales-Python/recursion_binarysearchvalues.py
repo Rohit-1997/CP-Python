@@ -30,10 +30,12 @@ def helper(L,low,high,result,found,v):
 	elif L[mid] < v:
 		helper(L,low,mid-1,result,found,v)
 		
-		
+
 def recursion_binarysearchvalues(L, v):
 	result = []
 	search_res = helper(L,0,len(L)-1,result,False,v)
 	return result
+
+print(recursion_binarysearchvalues(['a', 'c', 'f', 'g', 'm', 'q'], 'c'))
 
 	
