@@ -19,21 +19,17 @@
 
 def helper(L,low,high,result,found,v):
 	if not found and low > high:
-		return
+		return found
 	mid = (low + high) // 2
 	result.append((mid, L[mid]))
 	if L[mid] == v:
 		found = True
-		return
+		return found
 	elif L[mid] > v:
 		helper(L,mid+1,high,result,found,v)
 	elif L[mid] < v:
 		helper(L,low,mid-1,result,found,v)
 		
-	
-
-
-
 def recursion_binarysearchvalues(L, v):
 	result = []
 	low = 0
