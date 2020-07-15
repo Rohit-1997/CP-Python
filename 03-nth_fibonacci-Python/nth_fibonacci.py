@@ -9,7 +9,7 @@
 
 def fun_nthfibonaccinumber(n):
 	if n < 0:
-		return None
+		return -1
 	if n == 1:
 		return 0
 	if n == 2:
