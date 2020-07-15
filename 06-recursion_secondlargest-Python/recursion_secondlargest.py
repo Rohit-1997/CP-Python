@@ -13,6 +13,17 @@
 # Again, you do not need to sort the list. We didn't sort it in our sample solution. We just tracked the two largest 
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 
+def helper(L,index,current_max, prev_max):
+	if index == len(L):
+		return current_max, prev_max
+	if L[index] > current_max:
+		temp = current_max
+		current_max = L[index]
+		prev_max = temp
+
+
+
 def recursion_secondlargest(L):
 	if L == [] or len(L) == 1:
 		return None
+	current_max, prev_max = helper(L,1,L[0],L[0])
