@@ -9,7 +9,7 @@ def isperfectsquare(n):
 		if n < 0 or int(n) != n:
 			return False
 		res = int(math.sqrt(n))
-		return res**2 == n
+		return res**2 == int(n)
 	except:
 		return False
 
