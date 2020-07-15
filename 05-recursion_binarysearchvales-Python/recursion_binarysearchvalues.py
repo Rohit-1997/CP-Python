@@ -27,6 +27,8 @@ def helper(L,low,high,result,found,v):
 		return
 	elif L[mid] > v:
 		helper(L,mid+1,high,result,found,v)
+	elif L[mid] < v:
+		helper(L,low,mid-1,result,found,v)
 		
 	
 
