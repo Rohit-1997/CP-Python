@@ -6,7 +6,7 @@
 
 def fun_get_kth_digit(digit, k):
 	counter = -1
-
+	result = 0
 	while counter < k:
 		result = digit % 10
 		digit = digit//10
@@ -14,4 +14,9 @@ def fun_get_kth_digit(digit, k):
 	print(result)
 	return result
 
+print(fun_get_kth_digit(789, 0))
+print(fun_get_kth_digit(789, 1))
+print(fun_get_kth_digit(789, 2))
+print(fun_get_kth_digit(789, 0))
+print(fun_get_kth_digit(789, 0))
 print(fun_get_kth_digit(789, 0))
