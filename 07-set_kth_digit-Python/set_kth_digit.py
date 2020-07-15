@@ -6,7 +6,8 @@
 
 def fun_set_kth_digit(n, k, d):
 	data = list((str(abs(n))[::-1]))
-	data[k] = d
+	print(data)
+	data[k] = str(d)
 	res = ""
 	if abs(n) != n:
 		res += "-"
@@ -16,4 +17,4 @@ def fun_set_kth_digit(n, k, d):
 	return int(res)
 
 
-
+print(fun_set_kth_digit(468,0,1))
