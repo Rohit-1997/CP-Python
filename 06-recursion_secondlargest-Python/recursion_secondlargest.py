@@ -19,7 +19,7 @@ def helper(L,index,current_max, prev_max):
 	if L[index] > current_max:
 		prev_max = current_max
 		current_max = L[index]
-	elif L[index] > prev_max and L[index] != current_max:
+	elif L[index] > prev_max and L[index] <= current_max:
 		prev_max = L[index]
 	print("The current max and prev max: ", current_max, prev_max)
 	return helper(L,index+1,current_max,prev_max)
