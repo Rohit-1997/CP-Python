@@ -39,3 +39,4 @@ def ishappynumber(n):
 	
 	return False
 
+print(ishappynumber(23))
