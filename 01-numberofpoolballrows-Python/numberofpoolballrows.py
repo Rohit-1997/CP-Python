@@ -19,7 +19,9 @@ def fun_numberofpoolballrows(balls):
 			if ball_count == balls:
 				done = True
 			ball_count += 1
+		total_rows += 1
 		row_coutner += 1
+	
 		
 		 
 
