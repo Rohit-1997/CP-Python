@@ -39,6 +39,7 @@ def alphaAsia():
             ele = city + " - " + key
             result.append(ele)
     # print(result)
+    result.sort()
     return result
     
 
