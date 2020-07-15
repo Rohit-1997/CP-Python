@@ -8,3 +8,5 @@ def hasconsecutivedigits(n):
 		if number[i] == number[i + 1]:
 			return True
 	return False
+
+print(hasconsecutivedigits(22))
