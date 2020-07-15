@@ -37,7 +37,6 @@ def ishappynumber(n):
 		if sum in dict_data:
 			return False
 		dict_data[sum] = 1
-	
 	return False
 
 print(ishappynumber(23))
