@@ -7,6 +7,10 @@ def fun_nearestodd(n):
 	res = int(n)
 	if res % 2 != 0:
 		return res
-	return res-1
-
+	res_one = res - 1
+	res_two = res + 1
+	if (n-res_one) < (res_two - n):
+		return res_one
+	else:
+		return res_two
 
