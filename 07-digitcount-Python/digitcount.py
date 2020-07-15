@@ -8,7 +8,6 @@
 def digitcount(n):
 	if n == 0:
 		return 1
-
 	n = abs(n)
 	counter = 0
 
