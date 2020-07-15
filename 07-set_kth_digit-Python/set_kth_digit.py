@@ -2,10 +2,18 @@
 # where n is a possibly-negative int, k is a non-negative int, and d is a non-negative 
 # single digit (between 0 and 9 inclusive). This function returns the number n with 
 # the kth digit replaced with d. Counting starts at 0 and goes right-to-left, 
-# so the 0th digit is the rightmost digit. 
-
-
+# so the 0th digit is the rightmost digit.
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+	data = list((str(abs(n))[::-1]))
+	data[k] = d
+	res = ""
+	if abs(n) != n:
+		res += "-"
+	for i in range(len(data)-1, -1, -1):
+		res += data[i]
+	print("The result: ", res)
+	return int(res)
+
+
 
