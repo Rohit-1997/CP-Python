@@ -12,6 +12,9 @@ def fun_numberofpoolballrows(balls):
 	done = False
 	
 	while not done:
+		if ball_count == balls:
+			done = True
+			break
 		for i in range(row_coutner):
 			if ball_count == balls:
 				done = True
