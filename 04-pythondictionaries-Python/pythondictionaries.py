@@ -30,8 +30,16 @@ American City
 Asian City - Country
 Asian City - Country"""
 
+
+def alphaAsia():
+    result = []
+    asia_data = locations['Asia']
+    for key in asia_data:
+        print(key,":",asia_data[key])
+    
+
+
+
 locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia': {'India': ['Bangalore'], 'China': ['Shanghai']}, 'Africa': {'Egypt': ['Cairo']}}
 print(locations['North America']['USA'])
-asia_data = locations['Asia']
-for key in asia_data:
-    print(key,":",asia_data[key])
+
