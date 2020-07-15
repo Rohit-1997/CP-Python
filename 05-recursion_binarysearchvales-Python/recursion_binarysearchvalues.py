@@ -28,10 +28,10 @@ def helper(L,low,high,result,found,v):
 		return found
 	elif L[mid] > v:
 		print("In greater")
-		helper(L,mid+1,high,result,found,v)
+		helper(L,low,mid-1,result,found,v)
 	elif L[mid] < v:
 		print("In less")
-		helper(L,low,mid-1,result,found,v)
+		helper(L,mid+1,high,result,found,v)
 		
 
 def recursion_binarysearchvalues(L, v):
