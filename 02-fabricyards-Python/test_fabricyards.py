@@ -15,4 +15,3 @@ def test_fun_fabricyards(a, result):
 ])
 def test_fun_fabricexcess(a, result):
     assert fun_fabricexcess(a) == result
-
