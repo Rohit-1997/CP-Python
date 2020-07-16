@@ -15,6 +15,9 @@ def median(a):
 	print(mid)
 	return (a[mid - 1] + a[mid]) / 2
 
+
+print(median([1, 2, 3, 4, 5]))
+print(median([1.1, 2.1, 3.1, 4.1, 5.1]))
 print(median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 print(median([1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10]))
 print(median([1]))
