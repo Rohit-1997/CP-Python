@@ -23,7 +23,7 @@ def matrixadd(L, M):
 		if len(ele) != n1:
 			return None
 
-	if m1 != m2 or n1 != n2:
+	if m1 != m2:
 		return None
 	result = [[L[i][j] + M[i][j] for j in range(len(L[0]))] for i in range(len(L))]
 	return result
