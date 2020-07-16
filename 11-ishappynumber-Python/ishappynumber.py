@@ -27,7 +27,6 @@ def helper(number):
 def ishappynumber(n):
 	if n == 1:
 		return True
-
 	dict_data = defaultdict(int)
 	while True:
 		sum = helper(n)
@@ -37,6 +36,8 @@ def ishappynumber(n):
 		if sum in dict_data:
 			return False
 		dict_data[sum] = 1
+		n = sum
+		
 	return False
 
 print(ishappynumber(23))
