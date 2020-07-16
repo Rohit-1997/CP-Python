@@ -25,7 +25,7 @@ def fun_replace(s1, s2, s3):
 	
 	return result
 
-print(fun_replace("helloworld123", "3456", "123"))
+print(fun_replace("hellrldowo23ufn348hf oincodnrld123", "rld", "     "))
 
 
 
