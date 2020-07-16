@@ -11,7 +11,7 @@ def median(a):
 
 	if size%2 != 0:
 		return a[size//2]
-	mid = (size- 1)//2
+	mid = (size)//2
 	print(mid)
 	return (a[mid - 1] + a[mid + 1]) / 2
 
