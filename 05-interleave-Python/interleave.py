@@ -8,5 +8,23 @@
 
 
 def fun_interleave(s1,s2):
-	return ""
+	result = ""
+	first = 0
+	second = 0
+	size_one = len(s1)
+	size_two = len(s2)
+
+	while first < size_one and second < size_two:
+		result += s1[first]
+		first += 1
+		result += s2[second]
+		second += 1
 	
+	while first < size_one:
+		result += s1[first]
+		first += 1
+
+	while second < size_two:
+		result += s2[second]
+		second += 1
+	return result
