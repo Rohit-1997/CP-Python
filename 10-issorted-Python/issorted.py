@@ -25,9 +25,8 @@ def issorted(a):
 		if a[i] < a[i+1]:
 			chek_flag = True
 			break
-	print("Desc: ", chek_flag)
 	if not chek_flag:
 		return True
 	return False
 
-print(issorted([5,4,3,2,1]))
+print(issorted([5,7,3,2,1]))
