@@ -12,6 +12,7 @@ def removeduplicate(text):
 	res = ""
 	for char in list_data:
 		res += char
+	return res
 	
 # print(removeduplicate('HelloWorld'))
 # print(removeduplicate('EEE'))
