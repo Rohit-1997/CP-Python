@@ -36,23 +36,9 @@ def isPrime(n):
 	return True
 
 
-def fun_nth_happy_number(n):
+def fun_nth_happy_prime(n):
 	counter = 0
 	number = 0
-
-	while counter != n:
-		result = ishappynumber(number)
-		if result:
-			counter += 1
-		number += 1
-	return number - 1
-
-
-def fun_nth_happy_prime(n):
-	if n == 0:
-		return 1
-	counter = 0
-	number = 2
 
 	while counter != n:
 		result = ishappynumber(number)
