@@ -3,18 +3,24 @@
 # if given String is "XYZ" and "ZXY" then your function should return true, but if the input is 
 # "XYZ" and "YXZ" then return false.
 
+from collections import defaultdict
 
 def isrotated(str1, str2):
+	dict_data = defaultdict(str)
 	size = len(str1)
-	list_data = ['']*size
-
+	size_two = len(str2)
+	# building the dictionary
 	for i in range(size):
-		index = (i + 1) % size
-		list_data[index] = str1[i]
+		dict_data[str1[i]] = str1[(i+1)%size]
 
-	rotated_string = "".join(list_data)
-	print(rotated_string)
-	return rotated_string == str2
+	print(dict_data)
+
+	for i in range(size_two):
+		if str2[(i+1)%size_two] != dict_data[str2[i]]:
+			return False
+	return True
+
+
 
 
 print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
