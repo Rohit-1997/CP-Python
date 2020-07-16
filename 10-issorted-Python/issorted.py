@@ -23,3 +23,5 @@ def issorted(a):
 	if desc_flag:
 		return False
 	return True
+
+print(issorted([1,2,3,4,5]))
