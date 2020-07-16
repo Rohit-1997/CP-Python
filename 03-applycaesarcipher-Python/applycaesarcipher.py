@@ -23,6 +23,8 @@ def fun_applycaesarcipher(msg, shift):
 		else:
 			res += chr((ord(char) + shift - 97) % 26  + 97)
 
+	return res
+
 
 
 
