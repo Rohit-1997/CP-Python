@@ -54,3 +54,4 @@ def fun_nth_happy_prime(n):
 
 # print(isPrime(13))
 print(fun_nth_happy_prime(1))
+print(ishappynumber(11))
