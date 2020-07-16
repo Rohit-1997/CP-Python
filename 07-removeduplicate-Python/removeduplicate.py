@@ -11,7 +11,10 @@ def removeduplicate(text):
 	print(list_data)
 	res = ""
 	for char in list_data:
-		res += char
+		if char == ' ':
+			res += ' '
+		else:
+			res += char
 	return res
 	
 # print(removeduplicate('HelloWorld'))
