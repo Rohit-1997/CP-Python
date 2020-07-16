@@ -13,7 +13,7 @@ def median(a):
 		return a[size//2]
 	mid = (size)//2
 	print(mid)
-	return (a[mid - 1] + a[mid + 1]) / 2
+	return (a[mid - 1] + a[mid]) / 2
 
 print(median([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 print(median([1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10]))
