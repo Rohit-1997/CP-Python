@@ -5,5 +5,15 @@
 
 
 def isrotated(str1, str2):
-	#Your code goes here
-	pass
+	size = len(str1)
+	list_data = ['']*size
+
+	for i in range(size):
+		index = (i + 1) % size
+		list_data[index] = str1[i]
+
+	rotated_string = "".join(list_data)
+	return rotated_string == str2
+
+
+print(isrotated("XYZ", "ZXY"))
