@@ -10,6 +10,43 @@
 # assert(nthHappyNumber(6) == 28)
 # assert(nthHappyNumber(7) == 31)
 
+from collections import defaultdict
+
+def helper(number):
+	sum = 0
+	while number > 0:
+		digit = number % 10
+		sum += (digit**2)
+		number = number // 10
+	return sum
+
+
+def ishappynumber(n):
+	if n == 1:
+		return True
+	dict_data = defaultdict(int)
+	while True:
+		sum = helper(n)
+		print(sum)
+		if sum == 1:
+			return True
+		if sum in dict_data:
+			return False
+		dict_data[sum] = 1
+		n = sum
+		
+	return False
 
 def fun_nth_happy_number(n):
-	return 0
+	if n == 0:
+		return 1
+	counter = 0
+	number = 0
+
+	while counter != n:
+		result = ishappynumber(number)
+		if result:
+			counter += 1
+		number += 1
+	return number - 1
+
