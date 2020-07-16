@@ -16,6 +16,7 @@ def isrotated(str1, str2):
 	print(dict_data)
 
 	for i in range(size_two):
+		print(str2[(i+1)%size_two],dict_data[str2[i]])
 		if str2[(i+1)%size_two] != dict_data[str2[i]]:
 			return False
 	return True
