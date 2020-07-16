@@ -10,4 +10,4 @@ def removeduplicate(text):
 			list_data.append(char)
 	return "".join(list_data)
 	
-print(removeduplicate('JavaPython'))
+print(removeduplicate(''))
