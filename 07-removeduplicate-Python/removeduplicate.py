@@ -11,3 +11,5 @@ def removeduplicate(text):
 	return "".join(list_data)
 	
 print(removeduplicate('HelloWorld'))
+print(removeduplicate('EEE'))
+print(removeduplicate('a a'))
