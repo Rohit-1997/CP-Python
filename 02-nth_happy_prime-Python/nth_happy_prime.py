@@ -44,7 +44,15 @@ def fun_nth_happy_prime(n):
 
 	while counter != n:
 		result = ishappynumber(number)
+		print("The result: ", result, number)
 		if isPrime(result):
+			print("in counter")
 			counter += 1
+			print("The counter: ", counter)
+			if counter == n:
+				break
 		number += 1
-	return number - 1
+	return number
+
+print(isPrime(13))
+# print(fun_nth_happy_prime(1))
