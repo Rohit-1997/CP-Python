@@ -13,8 +13,12 @@ def issorted(a):
 		if a[i] > a[i+1]:
 			asc_falg = True
 			break
+	
 	if asc_falg:
 		return False
+
+	if not asc_falg:
+		return True
 
 	for i in range(len(a) - 1):
 		if a[i] < a[i+1]:
