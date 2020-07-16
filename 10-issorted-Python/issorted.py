@@ -6,21 +6,28 @@
 # the list.
 
 def issorted(a):
-	asc_falg = True
-	desc_flag = True
-
-
+	asc_falg = False
+	desc_flag = False
+	
+	chek_flag = False
 	for i in range(len(a) - 1):
 		if a[i] > a[i+1]:
-			asc_falg = True
+			chek_flag = True
 			break
 
+	if not chek_flag:
+		# asc_falg = True
+		return True
+
+
+	chek_flag = False
 	for i in range(len(a) - 1):
 		if a[i] < a[i+1]:
-			desc_flag = True
+			chek_flag = True
 			break
-	if desc_flag:
-		return False
-	return True
+	print("Desc: ", chek_flag)
+	if not chek_flag:
+		return True
+	return False
 
 print(issorted([5,4,3,2,1]))
