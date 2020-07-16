@@ -12,4 +12,4 @@ def median(a):
 	mid = size//2
 	return (a[mid - 1] + a[mid + 1]) / 2
 
-print(median([1,2,3,4,5]))
+print(median([1.1, 2.1, 3.1, 4.1, 5.1]))
