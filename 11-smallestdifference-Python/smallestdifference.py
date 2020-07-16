@@ -16,7 +16,7 @@ def smallestdifference(a):
 
 	return current_diff
 
-print(smallestdifference([-59,-36,-13,1,-53,-92,-2,-96,-54,75]))
+print(smallestdifference([1, -3, 71, 68, 17]))
 
 
 
