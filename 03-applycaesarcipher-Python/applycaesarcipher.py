@@ -14,7 +14,7 @@ def fun_applycaesarcipher(msg, shift):
 
 	for i in range(len(msg)):
 		char = msg[i]
-		if chat == ' ':
+		if char == ' ':
 			res += ' '
 		
 		elif char.isUpper():
