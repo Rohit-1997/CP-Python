@@ -17,6 +17,6 @@ def removeduplicate(text):
 			res += char
 	return res
 	
-# print(removeduplicate('HelloWorld'))
+print(removeduplicate('HelloWorld'))
 # print(removeduplicate('EEE'))
 print(removeduplicate('a a'))
