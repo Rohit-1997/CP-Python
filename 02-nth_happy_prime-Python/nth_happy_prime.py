@@ -50,7 +50,7 @@ def fun_nth_happy_prime(n):
 			counter += 1
 			print("The counter: ", counter)
 		number += 1
-	return number
+	return number - 1
 
 # print(isPrime(13))
 print(fun_nth_happy_prime(1))
