@@ -16,4 +16,4 @@ def isrotated(str1, str2):
 	return rotated_string == str2
 
 
-print(isrotated("XYZ", "YXZ"))
+print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
