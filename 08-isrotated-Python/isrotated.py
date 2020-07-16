@@ -21,4 +21,4 @@ def isrotated(str1, str2):
 	return True
 
 
-print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ACDEFGHIJKLMNOPQRSTUVWXYZB"))
+print(isrotated("12345", "54321"))
