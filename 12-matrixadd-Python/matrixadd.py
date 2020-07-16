@@ -17,7 +17,7 @@
 
 def matrixadd(L, M):
 	m1,n1 = len(L), len(L[0])
-	m2,n2 = len(L), len(L[0])
+	m2,n2 = len(M), len(M[0])
 
 	if m1 != m2 or n1 != n2:
 		return None
@@ -25,4 +25,4 @@ def matrixadd(L, M):
 	return result
 
 
-print(matrixadd([[1,  2,  3],[4,  5,  6]], [[21, 22, 23], [24, 25, 26]]))
+print(matrixadd([[1, 2]], [[10]]))
