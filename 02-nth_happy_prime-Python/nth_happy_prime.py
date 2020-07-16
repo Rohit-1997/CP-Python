@@ -49,8 +49,6 @@ def fun_nth_happy_prime(n):
 			print("in counter")
 			counter += 1
 			print("The counter: ", counter)
-			if counter == n:
-				break
 		number += 1
 	return number
 
