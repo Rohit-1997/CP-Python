@@ -40,7 +40,7 @@ def fun_nth_happy_prime(n):
 	if n == 0:
 		return 7
 	counter = 0
-	number = 8
+	number = 0
 
 	while counter != n:
 		result = ishappynumber(number)
