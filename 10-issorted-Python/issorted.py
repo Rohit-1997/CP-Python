@@ -28,4 +28,4 @@ def issorted(a):
 		return False
 	return True
 
-print(issorted([1,2,3,4,5]))
+print(issorted([1,3,2,4,5]))
