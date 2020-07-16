@@ -51,4 +51,14 @@ def fun_nth_happy_number(n):
 
 
 def fun_nth_happy_prime(n):
-	return 0
+	if n == 0:
+		return 1
+	counter = 0
+	number = 2
+
+	while counter != n:
+		result = ishappynumber(number)
+		if isPrime(result):
+			counter += 1
+		number += 1
+	return number - 1
