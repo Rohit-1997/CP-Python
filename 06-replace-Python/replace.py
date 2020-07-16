@@ -5,5 +5,27 @@
 
 
 def fun_replace(s1, s2, s3):
-	return s1
+	counter = 0
+	size_one = len(s1)
+	size_two = len(s2)
+	result = ""
+	
+	while counter < size_one:
+		if s1[counter] == s2[0]:
+			end_index = counter + size_two
+			if s1[counter:end_index] == s2:
+				result += s3
+				counter = end_index
+			else:
+				result += s1[counter]
+				counter += 1
+		else:
+			result += s1[counter]
+			counter += 1
+	
+	return result
+
+print(fun_replace("helloworld123", "hello", "345"))
+
+
 
