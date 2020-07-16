@@ -13,6 +13,7 @@ def isrotated(str1, str2):
 		list_data[index] = str1[i]
 
 	rotated_string = "".join(list_data)
+	print(rotated_string)
 	return rotated_string == str2
 
 
