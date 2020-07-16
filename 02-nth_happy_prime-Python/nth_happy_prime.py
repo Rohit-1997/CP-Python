@@ -37,8 +37,6 @@ def isPrime(n):
 
 
 def fun_nth_happy_prime(n):
-	# if n == 0:
-	# 	return 7
 	counter = -1
 	number = 0
 
