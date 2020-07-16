@@ -28,3 +28,5 @@ def fun_interleave(s1,s2):
 		result += s2[second]
 		second += 1
 	return result
+
+print(fun_interleave('pto', 'yhn'))
