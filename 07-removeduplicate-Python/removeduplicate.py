@@ -4,5 +4,10 @@
 # The second or further occurrence of duplicate should be removed.
 
 def removeduplicate(text):
-	# Your code goes here
-	pass
+	list_data = []
+	for char in text:
+		if char not in list_data:
+			list_data.append(char)
+	return "".join(list_data)
+	
+print(removeduplicate('JavaPython'))
