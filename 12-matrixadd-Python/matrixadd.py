@@ -17,7 +17,11 @@
 
 def matrixadd(L, M):
 	m1,n1 = len(L), len(L[0])
-	m2,n2 = len(M), len(M[0])
+	m2 = len(M)
+
+	for ele in M:
+		if len(ele) != n1:
+			return None
 
 	if m1 != m2 or n1 != n2:
 		return None
