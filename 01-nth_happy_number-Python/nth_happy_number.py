@@ -50,3 +50,5 @@ def fun_nth_happy_number(n):
 		number += 1
 	return number - 1
 
+
+print(fun_nth_happy_number(1))
