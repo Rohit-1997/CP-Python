@@ -9,7 +9,9 @@ def removeduplicate(text):
 		if char not in list_data:
 			list_data.append(char)
 	print(list_data)
-	return "".join(list_data)
+	res = ""
+	for char in list_data:
+		res += char
 	
 # print(removeduplicate('HelloWorld'))
 # print(removeduplicate('EEE'))
