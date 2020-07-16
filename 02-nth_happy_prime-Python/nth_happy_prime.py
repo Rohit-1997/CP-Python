@@ -37,10 +37,8 @@ def isPrime(n):
 
 
 def fun_nth_happy_number(n):
-	if n == 0:
-		return 1
 	counter = 0
-	number = 2
+	number = 0
 
 	while counter != n:
 		result = ishappynumber(number)
