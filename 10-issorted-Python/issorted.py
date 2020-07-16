@@ -6,5 +6,20 @@
 # the list.
 
 def issorted(a):
-	# your code goes here
-	pass
+	asc_falg = False
+	desc_flag = False
+
+	for i in range(len(a) - 1):
+		if a[i] > a[i+1]:
+			asc_falg = True
+			break
+	if asc_falg:
+		return False
+
+	for i in range(len(a) - 1):
+		if a[i] < a[i+1]:
+			desc_flag = True
+			break
+	if desc_flag:
+		return False
+	return True
