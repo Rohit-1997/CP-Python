@@ -28,13 +28,14 @@ def is_valid(n):
 
 def fun_isfactorish(n):
 	n = abs(n)
+	number = abs(n)
 	valid = is_valid(n)
 	if not valid:
 		return False
 
 	while n > 0:
 		units = n % 10
-		if not is_factor(units,n):
+		if not is_factor(units,number):
 			return False
 		n = n //10
 	return True
