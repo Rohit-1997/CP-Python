@@ -38,6 +38,6 @@ def fun_nth_additive_prime(n):
 		counter += 1
 	return result
 
-print(fun_nth_additive_prime(4))
+print("The result: ", fun_nth_additive_prime(4))
 		
 
