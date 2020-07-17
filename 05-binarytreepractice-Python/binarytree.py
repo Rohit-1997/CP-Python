@@ -8,12 +8,26 @@ class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)
 
+
+    def search_helper(self,node,value):
+        if node is None:
+            return False
+        if node.value == value:
+            return True
+        left_result = search_helper(node.left,value)
+        if left_result:
+            return True
+        right_result = search_helper(node.right, value)
+        return right_result
+        
+
     def search(self, find_val):
         """Return True if the value
         is in the tree, return
         False otherwise."""
-        # Your code goes here
-        pass
+        if not self.root:
+            return False
+        return search_helper(self.root,find_val)
 
     def print_tree(self):
         """Print out all tree nodes
