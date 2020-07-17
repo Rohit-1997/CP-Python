@@ -51,4 +51,5 @@ class BST(object):
                 current = current.left
             else:
                 current = current.right
+        return False
 
