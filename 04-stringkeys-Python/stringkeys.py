@@ -19,7 +19,7 @@ class HashTable(object):
         Return -1 otherwise."""
         index = self.calculate_hash_value(string)
         if self.table[index]:
-            return self.table[index]
+            return index
         return -1
 
 
