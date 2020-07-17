@@ -12,12 +12,29 @@ def isPrime(n):
 			return False
 	return True 
 
+def add_digits(number):
+	if number == 0:
+		return 0
+	sum = 0
+	while number > 0:
+		sum += (n%10)
+		number = number // 10
+	return sum
+
 
 def fun_nth_additive_prime(n):
 	if n == 0:
 		return 2
-	sum = 0
-	while n > 0:
-		sum += (n%10)
-		n = n//10
-	return isPrime(sum)
+	counter = 0
+	number = 3
+	result = -1
+
+	while counter != n:
+		added_res = add_digits(number)
+		if isPrime(added_res):
+			result = added_res
+		number += 1
+		counter += 1
+	return result
+		
+
