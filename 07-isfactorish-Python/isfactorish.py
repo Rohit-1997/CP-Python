@@ -11,6 +11,30 @@
 #  assert(fun_isfactorish(42) == False) # 42 has a leading 0 (only 2 unique digits)
 
 
+def is_factor(f,n):
+	if f == 0 and n == 0:
+		return True
+	if f == 0:
+		return False
+	return n%abs(f) == 0
+
+
+def is_valid(n):
+	if len(set(str(n))) != len(str(n)) or len(str(n)) > 3:
+		return False
+	return True
+
+
 def fun_isfactorish(n):
-	return False
+	n = abs(n)
+	valid = is_valid(n)
+	if not valid:
+		return False
+
+	while n > 0:
+		units = n % 10
+		if not is_factor(units,n):
+			return False
+		n = n //10
+	return True
 
