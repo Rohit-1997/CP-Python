@@ -11,3 +11,5 @@ def fun_isfactor(f, n):
 	if f == 0:
 		return False
 	return n%abs(f) == 0
+
+print(fun_isfactor(4,412))
