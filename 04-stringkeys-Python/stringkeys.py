@@ -21,11 +21,13 @@ class HashTable(object):
         if self.table[index]:
             return self.table[index]
         return -1
-        
+
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
         hash value from a string."""
-        return ord(string[0] * 100) + ord(string[1])
+        return (ord(string[0]) * 100) + ord(string[1])
 
 
+hash_table = HashTable()
+print(hash_table.calculate_hash_value('UDACITY'))
