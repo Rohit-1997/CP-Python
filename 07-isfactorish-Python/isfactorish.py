@@ -12,6 +12,7 @@
 
 
 def is_factor(f,n):
+	print(f,n)
 	if f == 0 and n == 0:
 		return True
 	if f == 0:
