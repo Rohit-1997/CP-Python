@@ -31,10 +31,13 @@ def fun_nth_additive_prime(n):
 
 	while counter != n:
 		added_res = add_digits(number)
+		print(added_res)
 		if isPrime(added_res):
 			result = added_res
 		number += 1
 		counter += 1
 	return result
+
+print(fun_nth_additive_prime(4))
 		
 
