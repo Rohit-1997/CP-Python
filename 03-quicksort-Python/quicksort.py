@@ -12,12 +12,14 @@ def partition(array,low,high):
 			array[p_index] = array[i]
 			array[i] = temp
 			p_index += 1
+	print('The array after partition: ', array)
 	return p_index
 
 
 def quicksort_helper(array,low,high):
 	if low < high:
 		pivot_index = partition(array,low,high)
+		print(pivot_index)
 		quicksort_helper(array,low,pivot_index-1)
 		quicksort_helper(array,high,pivot_index+1)
 
