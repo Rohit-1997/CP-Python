@@ -55,7 +55,9 @@ class BST(object):
 
         current = self.root
         while current is not None:
+            print(current.value)
             if current.value == find_val:
+                print("found case")
                 return True
             if current.value < find_val:
                 current = current.left
@@ -70,5 +72,5 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(5)
-tree.printSelf()
+# tree.printSelf()
 print(tree.search(2))
