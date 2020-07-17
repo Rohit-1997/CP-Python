@@ -54,4 +54,4 @@ tree.root.right = Node(3)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 
-print(tree.search(4))
+print(tree.search(7))
