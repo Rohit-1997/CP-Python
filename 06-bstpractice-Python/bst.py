@@ -53,3 +53,6 @@ class BST(object):
                 current = current.right
         return False
 
+
+tree = BST(4)
+print(tree.search(4))
