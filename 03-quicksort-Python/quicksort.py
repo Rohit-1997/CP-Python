@@ -26,7 +26,7 @@ def quicksort_helper(array,low,high):
 		pivot_index = partition(array,low,high)
 		print(pivot_index)
 		quicksort_helper(array,low,pivot_index-1)
-		quicksort_helper(array,high,pivot_index+1)
+		quicksort_helper(array,pivot_index+1, high)
 
 
 def quicksort(array):
