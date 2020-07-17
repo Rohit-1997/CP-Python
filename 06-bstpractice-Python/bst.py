@@ -30,6 +30,7 @@ class BST(object):
                     break
                 else:
                     current = current.right
+        
 
     def printSelf(self):
         # Your code goes here
@@ -37,5 +38,17 @@ class BST(object):
         
     def search(self, find_val):
         # Your code goes here
-        pass
+        if not self.root:
+            return False
+        if self.root.value == find_val:
+            return True
+
+        current = self.root
+        while current is not None:
+            if current.value == find_val:
+                return True
+            if current.value < find_val:
+                current = current.left
+            else:
+                current = current.right
 
