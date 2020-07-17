@@ -29,7 +29,7 @@ def fun_nth_palindromic_prime(n):
 			result = number
 			counter += 1
 		number += 1
-	return number
+	return result
 
 # print(is_palindrome(3))
 # print(is_prime(3))
