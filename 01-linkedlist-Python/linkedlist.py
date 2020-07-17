@@ -38,7 +38,7 @@ class LinkedList(object):
         while counter != position:
             current = current.next
             counter += 1
-        return current.value
+        return current
     
     def insert(self, new_element, position):
         """Insert a new node at the given position.
