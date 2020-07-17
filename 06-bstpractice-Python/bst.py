@@ -47,7 +47,7 @@ class BST(object):
                 queue.append(current.right)
         
     def search(self, find_val):
-        if not find_val or type(find_val) == 'str':
+        if not find_val or type(find_val) == str:
             return False
         if not self.root:
             return False
