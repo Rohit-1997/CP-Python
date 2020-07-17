@@ -37,7 +37,7 @@ def fun_nth_additive_prime(n):
 		added_res = add_digits(number)
 		print(added_res)
 		if isPrime(added_res):
-			result = added_res
+			result = number
 			counter += 1
 		number += 1
 		
