@@ -27,4 +27,6 @@ def quicksort(array):
 		return []
 	quicksort_helper(array,0,len(array)-1)
 	return array
+
+print(quicksort([21, 4, 1, 3, 9, 20, 25, 6, 21, 14]))
 	
