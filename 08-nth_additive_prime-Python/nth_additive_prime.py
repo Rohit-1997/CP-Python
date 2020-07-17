@@ -43,6 +43,6 @@ def fun_nth_additive_prime(n):
 		
 	return result
 
-print("The result: ", fun_nth_additive_prime(3))
+print("The result: ", fun_nth_additive_prime(5))
 		
 
