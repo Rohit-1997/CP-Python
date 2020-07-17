@@ -23,7 +23,7 @@ def fun_nth_palindromic_prime(n):
 	number = 3
 	result = -1
 
-	while counter != number:
+	while counter != n:
 		print(number)
 		if is_prime(number) and is_palindrome(number):
 			result = number
@@ -31,7 +31,7 @@ def fun_nth_palindromic_prime(n):
 		number += 1
 	return number
 
-print(is_palindrome(3))
-print(is_prime(3))
-# print(fun_nth_palindromic_prime(1))
+# print(is_palindrome(3))
+# print(is_prime(3))
+print(fun_nth_palindromic_prime(1))
 	
