@@ -22,6 +22,6 @@ def isrotation(x, y):
 			return False
 	return True
 
-print(isrotation(3412, 1234))
+print(isrotation(12345,54321))
 
 	
