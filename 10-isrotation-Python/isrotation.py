@@ -17,8 +17,8 @@ def isrotation(x, y):
 		dict_data[x[i]] = x[index]
 	print(dict_data)
 
-	for i in range(len(y) - 1):
-		if dict_data[y[i]] != y[i+1]:
+	for i in range(len(y)):
+		if dict_data[y[i]] != y[(i+1)%len(y)]:
 			return False
 	return True
 
