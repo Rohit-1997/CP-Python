@@ -20,7 +20,6 @@ def binary_search(input_array, value):
 
     while low <= high:
         mid = (low + high) // 2
-        print(mid)
         if input_array[mid] < value:
             low = mid + 1
         elif input_array[mid] > value:
