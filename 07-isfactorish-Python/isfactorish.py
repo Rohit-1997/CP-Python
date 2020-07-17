@@ -38,3 +38,5 @@ def fun_isfactorish(n):
 		n = n //10
 	return True
 
+print(fun_isfactorish(42))
+
