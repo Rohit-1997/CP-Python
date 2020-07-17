@@ -32,3 +32,5 @@ class HashTable(object):
 hash_table = HashTable()
 print(hash_table.calculate_hash_value('UDACITY'))
 print(hash_table.lookup('UDACITY'))
+print(hash_table.calculate_hash_value('UDACIOUS'))
+print(hash_table.lookup('UDACIOUS'))
