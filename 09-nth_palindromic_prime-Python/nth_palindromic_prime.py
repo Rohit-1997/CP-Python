@@ -32,5 +32,6 @@ def fun_nth_palindromic_prime(n):
 	return number
 
 print(is_palindrome(3))
+print(is_prime(3))
 # print(fun_nth_palindromic_prime(1))
 	
