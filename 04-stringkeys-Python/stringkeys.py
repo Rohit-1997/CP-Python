@@ -31,3 +31,4 @@ class HashTable(object):
 
 hash_table = HashTable()
 print(hash_table.calculate_hash_value('UDACITY'))
+hash_table.lookup('UDACITY')
