@@ -34,7 +34,17 @@ class BST(object):
 
     def printSelf(self):
         # Your code goes here
-        pass
+        if self.root is None:
+            return
+        queue = [self.root]
+
+        while queue != []:
+            current = queue.pop(0)
+            print(current.value)
+            if current.left:
+                queue.append(current.left)
+            if current.right:
+                queue.append(current.right)
         
     def search(self, find_val):
         # Your code goes here
@@ -60,4 +70,5 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(5)
+tree.printSelf()
 print(tree.search(5))
