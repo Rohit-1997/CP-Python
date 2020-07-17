@@ -15,7 +15,6 @@ def partition(array,low,high):
 	return p_index
 
 
-
 def quicksort_helper(array,low,high):
 	if low < high:
 		pivot_index = partition(array,low,high)
