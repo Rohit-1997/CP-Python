@@ -59,7 +59,7 @@ class BST(object):
             if current.value == find_val:
                 print("found case")
                 return True
-            if current.value < find_val:
+            if find_val < current.value:
                 current = current.left
             else:
                 current = current.right
