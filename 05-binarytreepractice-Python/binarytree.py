@@ -14,10 +14,10 @@ class BinaryTree(object):
             return False
         if node.value == value:
             return True
-        left_result = search_helper(node.left,value)
+        left_result = self.search_helper(node.left,value)
         if left_result:
             return True
-        right_result = search_helper(node.right, value)
+        right_result = self.search_helper(node.right, value)
         return right_result
         
 
@@ -27,7 +27,7 @@ class BinaryTree(object):
         False otherwise."""
         if not self.root:
             return False
-        return search_helper(self.root,find_val)
+        return self.search_helper(self.root,find_val)
 
     def print_tree(self):
         """Print out all tree nodes
@@ -47,3 +47,11 @@ class BinaryTree(object):
         recursive print solution."""
         # Your code goes here
         pass
+
+tree = BinaryTree(1)
+tree.root.left = Node(2)
+tree.root.right = Node(3)
+tree.root.left.left = Node(4)
+tree.root.left.right = Node(5)
+
+print(tree.search(4))
