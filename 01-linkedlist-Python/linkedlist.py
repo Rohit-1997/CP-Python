@@ -90,6 +90,16 @@ class LinkedList(object):
                 return
             previous = current
             current = current.next
+
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
+
+print(ll.get_position(2))
         
 
 
