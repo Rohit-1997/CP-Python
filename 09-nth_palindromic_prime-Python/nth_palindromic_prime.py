@@ -15,6 +15,7 @@ def is_prime(number):
 def is_palindrome(number):
 	return str(number) == str(number)[::-1]
 
+
 def fun_nth_palindromic_prime(n):
 	if n == 0:
 		return 2
@@ -23,13 +24,13 @@ def fun_nth_palindromic_prime(n):
 	result = -1
 
 	while counter != number:
+		print(number)
 		if is_prime(number) and is_palindrome(number):
 			result = number
 			counter += 1
 		number += 1
-
 	return number
-	
 
-
+print(is_palindrome(3))
+# print(fun_nth_palindromic_prime(1))
 	
