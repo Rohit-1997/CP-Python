@@ -17,7 +17,7 @@ def add_digits(number):
 		return 0
 	sum = 0
 	while number > 0:
-		sum += (n%10)
+		sum += (number%10)
 		number = number // 10
 	return sum
 
