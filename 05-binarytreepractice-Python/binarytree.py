@@ -34,7 +34,7 @@ class BinaryTree(object):
         as they are visited in
         a pre-order traversal."""
         # Your code goes here
-        pass
+        
 
     def preorder_search(self, start, find_val):
         """Helper method - use this to create a 
