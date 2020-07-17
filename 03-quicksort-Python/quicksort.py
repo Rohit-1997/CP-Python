@@ -13,6 +13,11 @@ def partition(array,low,high):
 			array[i] = temp
 			p_index += 1
 	print('The array after partition: ', array)
+
+	# swapping the last element
+	temp = array[p_index]
+	array[p_index] = pivot
+	array[high] = temp
 	return p_index
 
 
