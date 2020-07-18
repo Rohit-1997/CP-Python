@@ -20,4 +20,6 @@ def fun_alternatingsum(a):
 			sub_flag = True
 	return sum
 
+print(fun_alternatingsum([5,3,8,4]))
+
 
