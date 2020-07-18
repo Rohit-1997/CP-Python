@@ -11,6 +11,7 @@ def fun_kth_occurrences(s, n):
 		dict_data[ele] += 1
 		if dict_data[ele] == n:
 			return ele
+	return -1
 
 
 	
