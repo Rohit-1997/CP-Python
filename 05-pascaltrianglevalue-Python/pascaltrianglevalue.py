@@ -15,5 +15,5 @@ def factorial(number):
 def fun_pascaltrianglevalue(row, col):
 	if row >= col:
 		nume = factorial(row)
-		deno = factorial(col) * factorial(row - col)
+		deno = factorial(row) * factorial(row - col)
 		return nume / deno
