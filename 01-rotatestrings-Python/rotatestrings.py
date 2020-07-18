@@ -7,7 +7,6 @@
 def fun_rotatestrings(s, n):
 	if n == 0:
 		return s
-
 	size = len(s)
 	aux_x = ['']*size
 	print(aux_x)
