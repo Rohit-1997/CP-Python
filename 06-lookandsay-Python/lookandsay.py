@@ -11,16 +11,15 @@ from collections import defaultdict
 def lookandsay(a):
 	if a == []:
 		return []
-
-	dict_data = defaultdict(int)
+	count = 1
 	result = []
 
-	for ele in a:
-		dict_data[ele] += 1
-
-	for ele in sorted(dict_data.keys()):
-		result.append((dict_data[ele], ele))
-
+	for i in range(len(a) - 1):
+		if a[i] == a[i + 1]:
+			count += 1
+		else:
+			result.append((count, a[i]))
+			count = 1
 	return result
 
 print(lookandsay([3,3,8,3,3,3,3]))
