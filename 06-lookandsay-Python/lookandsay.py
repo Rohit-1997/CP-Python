@@ -23,7 +23,7 @@ def lookandsay(a):
 
 	return result
 
-print(lookandsay([1,1,1]))
+print(lookandsay([3,3,8,3,3,3,3]))
 
 	
 
