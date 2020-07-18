@@ -7,4 +7,21 @@
 
 def multipolynomials(p1, p2):
 	# Your code goes here
-	pass
+	if len(p1) >= len(p2):
+		p1_size = len(p1)
+		p2_size = len(p2)
+	else:
+		p1_size = len(p2)
+		p2_size = len(p1)
+
+	result = [0] * (p1_size + p2_size - 1)
+
+	for i in range(p1_size):
+		for j in range(p2_size):
+			result[i+j] += p1[i] + p2[j]
+	return result
+
+
+
+
+
