@@ -9,7 +9,7 @@
 # inverseLookAndSay([(2,3),(1,8),(4,3)]) == [3,3,8,3,3,3,3])
 
 def inverselookandsay(a):
-	if a == []:
+	if a == [] or a == [()]:
 		return []
 	result_list = []
 
