@@ -13,6 +13,7 @@ def fun_rotatestrings(s, n):
 	print(aux_x)
 
 	if abs(n) == n:
+		print("In here")
 		for i in range(n):
 			index = (i-1) % size
 			print(index)
