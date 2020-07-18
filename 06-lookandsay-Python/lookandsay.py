@@ -21,7 +21,7 @@ def lookandsay(a):
 		else:
 			result.append((count, a[i]))
 			count = 1
-	result.append((count, a[i]))
+	result.append((count, a[-1]))
 	return result
 
 print(lookandsay([-1,2,7]))
