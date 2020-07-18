@@ -9,11 +9,9 @@ def fun_kth_occurrences(s, n):
 
 	for ele in s:
 		dict_data[ele] += 1
-		print(dict_data)
-		if dict_data[ele] == n:
-			result = ele
-	
-	return result
+
+	result_list = sorted(s, key=lambda  x: dict_data[x])
+	print(result_list)
 
 
 print(fun_kth_occurrences("asuszenphonemaxm1 aemnsh",6))
