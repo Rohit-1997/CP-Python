@@ -5,8 +5,8 @@
 def fun_alternatingsum(a): 
 	if len(a) == 0:
 		return 0
-	sub_flag = True
-	add_flag = False
+	sub_flag = False
+	add_flag = True
 	sum = 0
 	
 	for ele in a:
