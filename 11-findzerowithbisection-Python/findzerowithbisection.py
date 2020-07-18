@@ -18,7 +18,7 @@ def findzerowithbisection(x, epsilon):
 			high = mid
 		elif (mid**2) < x:
 			low = mid
-		elif abs((mid**2) - x) < epsilon:
+		elif abs((mid**2) - x) <= epsilon:
 			print("In here")
 			return mid
 	return -1
