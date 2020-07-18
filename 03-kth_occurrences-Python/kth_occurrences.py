@@ -22,6 +22,6 @@ def fun_kth_occurrences(s, n):
 	
 	
 
-print(fun_kth_occurrences("asuszenphonemaxm1 aemnsh",1))
+print(fun_kth_occurrences("asuszenphonemaxm1 aemnsh",6))
 
 
