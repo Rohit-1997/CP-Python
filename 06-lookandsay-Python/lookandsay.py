@@ -21,6 +21,7 @@ def lookandsay(a):
 		else:
 			result.append((count, a[i]))
 			count = 1
+	result.append((count, a[i]))
 	return result
 
 print(lookandsay([3,3,8,3,3,3,3]))
