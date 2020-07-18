@@ -21,7 +21,6 @@ def findzerowithbisection(x, epsilon):
 		elif abs((mid**2) - x) < epsilon:
 			print("In here")
 			return mid
-		print((mid ** 2) - x)
 	return -1
 
 print(findzerowithbisection(25,0.01))
