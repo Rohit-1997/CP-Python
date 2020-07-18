@@ -32,7 +32,7 @@ def fun_wordwrap(s, n):
 		counter += 1
 	return result
 
-print(fun_wordwrap(" a b c de fgh ",  4))
+print(fun_wordwrap("  abcdefghij",  4))
 
 
  
