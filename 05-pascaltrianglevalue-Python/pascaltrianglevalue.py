@@ -13,7 +13,7 @@ def factorial(number):
 	return number * factorial(number - 1)
 
 def fun_pascaltrianglevalue(row, col):
-	if col <= row:
+	if row >= col:
 		nume = factorial(row)
 		deno = factorial(col) * factorial(row - col)
 		return nume / deno
