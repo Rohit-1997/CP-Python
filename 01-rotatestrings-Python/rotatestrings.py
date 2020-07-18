@@ -4,8 +4,22 @@
 # assert(rotateString('abcd',  1) == 'bcda')
 # assert(rotateString('abcd', -1) == 'dabc')
 
-
-
 def fun_rotatestrings(s, n):
-	return s
+	if n == 0:
+		return s
+
+	size = len(s)
+	aux_x = ['']*abs(n)
+
+	if abs(n) == n:
+		for i in range(n):
+			index = (i-1) % size
+			aux_x[index] = s[i]
+		return "".join(aux_x)
+	else:
+		for i in range(n):
+			index = (i+1) % size
+			aux_x[index] = s[i]
+		return "".join(aux_x)
+
 
