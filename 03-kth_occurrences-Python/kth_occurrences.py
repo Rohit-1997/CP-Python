@@ -11,7 +11,7 @@ def fun_kth_occurrences(s, n):
 		if ele != " ":
 			dict_data[ele] += 1
 	print(dict_data)
-	list_data = sorted(dict_data.keys(), key=lambda  x: dict_data[x])
+	list_data = sorted(dict_data.keys(), key=lambda  x: dict_data[x])[::-1]
 	print(list_data)
 	return list_data[n]
 	
