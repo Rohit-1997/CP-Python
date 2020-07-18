@@ -10,16 +10,9 @@ def fun_kth_occurrences(s, n):
 	for ele in s:
 		dict_data[ele] += 1
 
-	max_count = max(dict_data.values())
-	print(max_count)
-	print(dict_data)
-	counter = 0
-	for key in dict_data:
-		if dict_data[key] == max:
-			counter += 1
-			if counter == n:
-				return key
-	return ''
+	list_data = sorted(dict_data.keys(), key=lambda  x: dict_data[x])
+	print(list_data)
+	return list_data[n-1]
 	
 	
 
