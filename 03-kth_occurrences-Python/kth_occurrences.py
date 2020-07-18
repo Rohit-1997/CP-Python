@@ -12,7 +12,7 @@ def fun_kth_occurrences(s, n):
 
 	result_list = sorted(s, key=lambda  x: dict_data[x], reverse=True)
 	print(result_list)
-
+	return result_list[0]
 
 print(fun_kth_occurrences("england",1))
 
