@@ -10,8 +10,8 @@ def fun_kth_occurrences(s, n):
 	for ele in s:
 		dict_data[ele] += 1
 		if dict_data[ele] == n:
-			return ele
-	return -1
+			result = ele
+	return result
 
 
 	
