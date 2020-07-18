@@ -8,4 +8,23 @@ def findzerowithbisection(x, epsilon):
 	# epsilon and step are initialized
 	# don't change these values
 	# epsilon
-	# your code starts here
+	low = 1
+	high = x - 1
+
+	while low <= high:
+		mid = (low + high) / 2
+		print("Te mid: ", mid)
+		if (mid**2) > x:
+			high = mid -1
+		elif (mid**2) < x:
+			low = mid + 1
+		elif abs((mid**2) - x) < epsilon:
+			print("In here")
+			return mid
+		print((mid ** 2) - x)
+	return -1
+
+print(findzerowithbisection(25,0.01))
+
+			
+
