@@ -14,14 +14,14 @@ def fun_rotatestrings(s, n):
 
 	if abs(n) == n:
 		print("In here")
-		for i in range(n):
+		for i in range(size):
 			index = (i-1) % size
 			print(index)
 			aux_x[index] = s[i]
 		print(aux_x)
 		return "".join(aux_x)
 	else:
-		for i in range(n):
+		for i in range(size):
 			index = (i+1) % size
 			print(index)
 			aux_x[index] = s[i]
