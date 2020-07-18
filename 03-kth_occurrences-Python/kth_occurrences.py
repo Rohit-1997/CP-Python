@@ -11,6 +11,7 @@ def fun_kth_occurrences(s, n):
 		dict_data[ele] += 1
 
 	max_count = max(dict_data.values())
+	print(max_count)
 
 	counter = 0
 	for key in dict_data:
