@@ -17,3 +17,4 @@ def fun_pascaltrianglevalue(row, col):
 		nume = factorial(row)
 		deno = factorial(col) * factorial(row - col)
 		return nume / deno
+	return 0
