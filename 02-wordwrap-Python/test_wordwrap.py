@@ -4,7 +4,7 @@ from wordwrap import fun_wordwrap
 import pytest
 
 
-@pytest.mark.parametrize('s1, s2, result',[	
+@pytest.mark.parametrize('s1, s2, result',[
 (" a b c de fgh ",  4, "a-b-\nc-de\n-fgh"),
  ("  abcdefghij", 4, "abcd\nefgh\nij")
 ])
