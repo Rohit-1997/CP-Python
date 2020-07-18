@@ -23,7 +23,7 @@ def findzerowithbisection(x, epsilon):
 			return mid
 	return -1
 
-print(findzerowithbisection(49,0.01))
+print(findzerowithbisection(81,0.01))
 
 			
 
