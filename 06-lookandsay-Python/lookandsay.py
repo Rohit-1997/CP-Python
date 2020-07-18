@@ -22,6 +22,9 @@ def lookandsay(a):
 		result.append((dict_data[ele], ele))
 
 	return result
+
+print(lookandsay([3,3,8,3,3,3,3]))
+
 	
 
 
