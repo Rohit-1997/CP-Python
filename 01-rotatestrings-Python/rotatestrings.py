@@ -9,17 +9,22 @@ def fun_rotatestrings(s, n):
 		return s
 
 	size = len(s)
-	aux_x = ['']*abs(n)
+	aux_x = ['']*size
+	print(aux_x)
 
 	if abs(n) == n:
 		for i in range(n):
 			index = (i-1) % size
+			print(index)
 			aux_x[index] = s[i]
 		return "".join(aux_x)
 	else:
 		for i in range(n):
 			index = (i+1) % size
+			print(index)
 			aux_x[index] = s[i]
 		return "".join(aux_x)
+
+print(fun_rotatestrings('abcd', 1))
 
 
