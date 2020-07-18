@@ -10,10 +10,18 @@ def fun_kth_occurrences(s, n):
 	for ele in s:
 		dict_data[ele] += 1
 
-	result_list = sorted(s, key=lambda  x: dict_data[x], reverse=True)
-	print(result_list)
-	return result_list[0]
+	max_count = max(dict_data.values())
 
-print(fun_kth_occurrences("england",1))
+	counter = 0
+	for key in dict_data:
+		if dict_data[key] == max:
+			counter += 1
+			if counter == n:
+				return key
+	return ''
+	
+	
+
+print(fun_kth_occurrences("asuszenphonemaxm1 aemnsh",1))
 
 
