@@ -12,11 +12,12 @@ def fun_kth_occurrences(s, n):
 			dict_data[ele] += 1
 	print(dict_data)
 	list_data = sorted(dict_data.keys(), key=lambda  x: dict_data[x])[::-1]
-	print(list_data)
+	if len(list_data) == 1:
+		return list_data[0]
 	return list_data[n-1]
 	
 	
 
-print(fun_kth_occurrences("hsdibdouvbeiovbfeibvdsioubidsbvviefadbcildfab",4))
+print(fun_kth_occurrences("    h  ",2))
 
 
