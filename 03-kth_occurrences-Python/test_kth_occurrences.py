@@ -7,7 +7,7 @@ import pytest
 @pytest.mark.parametrize('s1, s2, result',[	
 
 ("helllo woorld", 2, 'o'), ("hsdibdouvbeiovbfeibvdsioubidsbvviefadbcildfab", 4, 'v'),
-("    h  ", 1, 'h'), ("hello hyderabad a", 1, 'a'), ("england", 1, 'n'),
+("    h  ", 1, 'h'), ("hello hyderabad a", 1, 'a'), ("england", 1, 'd'),
 ("asuszenphonemaxm1 aemnsh", 6, 'h')
 
 ])
