@@ -13,7 +13,7 @@ def fun_kth_occurrences(s, n):
 	print(dict_data)
 	list_data = sorted(dict_data.keys(), key=lambda  x: dict_data[x])[::-1]
 	print(list_data)
-	return list_data[n]
+	return list_data[n-1]
 	
 	
 
