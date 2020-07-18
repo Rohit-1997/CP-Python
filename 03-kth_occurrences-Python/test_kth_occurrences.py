@@ -8,7 +8,7 @@ import pytest
 
 ("helllo woorld", 2, 'o'), ("hsdibdouvbeiovbfeibvdsioubidsbvviefadbcildfab", 4, 'v'),
 ("    h  ", 1, 'h'), ("hello hyderabad a", 1, 'a'), ("england", 1, 'd'),
-("asuszenphonemaxm1 aemnsh", 6, 'h')
+("asuszenphonemaxm1 aemnsh", 6, '')
 
 ])
 def test_fun_kth_occurrences(s1, s2, result):
