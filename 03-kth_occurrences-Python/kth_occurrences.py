@@ -17,6 +17,6 @@ def fun_kth_occurrences(s, n):
 	
 	
 
-print(fun_kth_occurrences("helllo woorld",2))
+print(fun_kth_occurrences("hsdibdouvbeiovbfeibvdsioubidsbvviefadbcildfab",4))
 
 
