@@ -11,7 +11,7 @@ def findzerowithbisection(x, epsilon):
 	low = 1
 	high = x - 1
 
-	while low < high:
+	while low <= high:
 		mid = (low + high) / 2
 		print("Te mid: ", mid)
 		if (mid**2) > x:
