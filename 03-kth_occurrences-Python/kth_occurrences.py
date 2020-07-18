@@ -18,6 +18,6 @@ def fun_kth_occurrences(s, n):
 	
 	
 
-print(fun_kth_occurrences("    h  ",2))
+print(fun_kth_occurrences("hello hyderabad a",2))
 
 
