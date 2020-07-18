@@ -18,7 +18,7 @@ def lookandsay(a):
 	for ele in a:
 		dict_data[ele] += 1
 
-	for ele in a:
+	for ele in sorted(dict_data.keys()):
 		result.append((dict_data[ele], ele))
 
 	return result
