@@ -11,13 +11,13 @@ def findzerowithbisection(x, epsilon):
 	low = 0
 	high = x
 	mid = (low + high) / 2
-	while abs((mid**2) - x) >= epsilon:
+	while abs((mid**2) - x) > epsilon:
 		print("Te mid: ", mid)
 		if (mid**2) > x:
 			high = mid
 		elif (mid**2) < x:
 			low = mid
-		elif abs((mid**2) - x) < epsilon:
+		elif abs((mid**2) - x) <= epsilon:
 			print("In here")
 			return mid
 		mid = (low + high) / 2
