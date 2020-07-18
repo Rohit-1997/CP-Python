@@ -14,10 +14,12 @@ def fun_alternatingsum(a):
 			sum -= ele
 			sub_flag = False
 			add_flag = True
+			print(sum)
 		elif add_flag and not sub_flag:
 			sum += ele
 			add_flag = False
 			sub_flag = True
+			print(sum)
 	return sum
 
 print(fun_alternatingsum([5,3,8,4]))
