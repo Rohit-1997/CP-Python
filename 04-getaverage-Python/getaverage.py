@@ -16,5 +16,7 @@ def fun_getaverage(s):
 			number_list.append(number)
 		except:
 			continue
+	if len(number_list) == 0:
+		return 0.0
 	return sum(number_list) / len(number_list)
 
