@@ -12,7 +12,7 @@ def fun_kth_occurrences(s, n):
 
 	max_count = max(dict_data.values())
 	print(max_count)
-
+	print(dict_data)
 	counter = 0
 	for key in dict_data:
 		if dict_data[key] == max:
