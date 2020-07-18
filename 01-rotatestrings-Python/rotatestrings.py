@@ -21,7 +21,7 @@ def fun_rotatestrings(s, n):
 		return "".join(aux_x)
 	else:
 		for i in range(size):
-			index = (i+n) % size
+			index = (i+abs(n)) % size
 			print(index)
 			aux_x[index] = s[i]
 		return "".join(aux_x)
