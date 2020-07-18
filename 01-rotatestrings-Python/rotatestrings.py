@@ -26,6 +26,6 @@ def fun_rotatestrings(s, n):
 			aux_x[index] = s[i]
 		return "".join(aux_x)
 
-print(fun_rotatestrings('abcd', -1))
+print(fun_rotatestrings('abcd', 3))
 
 
