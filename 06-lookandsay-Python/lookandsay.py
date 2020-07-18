@@ -6,7 +6,24 @@
 # lookAndSay([-1,2,7]) == [(1,-1),(1,2),(1,7)]
 # lookAndSay([3,3,8,-10,-10,-10]) == [(2,3),(1,8),(3,-10)]
 # lookAndSay([3,3,8,3,3,3,3]) == [(2,3),(1,8),(4,3)]
+from collections import defaultdict
 
 def lookandsay(a):
-	# Your code goes here
-	pass
+	if a == []:
+		return []
+
+	dict_data = defaultdict(int)
+	result = []
+
+	for ele in a:
+		dict_data[ele] += 1
+
+	for ele in a:
+		result.append((dict_data[ele], ele))
+
+	return result
+	
+
+
+	
+	
