@@ -19,7 +19,7 @@ def multipolynomials(p1, p2):
 	for i in range(p1_size):
 		index = i
 		for j in range(p2_size):
-			result[index] += p1[i] + p2[j]
+			result[index] += (p1[i] * p2[j])
 			index += 1
 	return result
 
