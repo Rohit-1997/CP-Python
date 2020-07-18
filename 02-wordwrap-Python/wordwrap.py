@@ -17,7 +17,21 @@
 
 
 def fun_wordwrap(s, n):
-	return ""
+	s = s.lstrip()
+	result = ""
+	counter = 0
+	for i in range(len(s)):
+		if counter == 4:
+			counter = 0
+			result += '\n'
+		if s[i] == ' ':
+			result += '-'
+		else:
+			result += s[i]
+		counter += 1
+	return result
+
+print(fun_wordwrap(" a b c de fgh ",  4))
 
 
  
