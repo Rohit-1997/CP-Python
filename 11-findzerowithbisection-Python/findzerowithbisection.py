@@ -8,7 +8,7 @@ def findzerowithbisection(x, epsilon):
 	# epsilon and step are initialized
 	# don't change these values
 	# epsilon
-	low = 1
+	low = 0
 	high = x - 1
 
 	while low <= high:
