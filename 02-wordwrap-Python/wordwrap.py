@@ -18,6 +18,7 @@
 
 def fun_wordwrap(s, n):
 	s = s.lstrip()
+	s = s.rstrip()
 	result = ""
 	counter = 0
 	for i in range(len(s)):
