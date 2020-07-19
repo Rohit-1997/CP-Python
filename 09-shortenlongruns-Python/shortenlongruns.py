@@ -39,6 +39,7 @@ def shortenlongruns(L, k):
 			count += 1
 			print(count)
 			if count == k:
+				print("in here")
 				L.pop(i)
 				print(L)
 				count = 0
