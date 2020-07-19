@@ -24,5 +24,5 @@ def destructiveshortenlongruns(L, k):
 				L.pop(i)
 	return L
 
-print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 2))
 			
