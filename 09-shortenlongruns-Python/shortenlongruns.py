@@ -11,13 +11,24 @@
 
 def shortenlongruns(L, k):
 	size = len(L)
-	result_list = [None]*size
+	index = 0
+	count = 0
+	result = []
 
-	for i in range(len(L)):
-		if k not in result_list:
-			result_list[i] = L[i]
-
-	return result_list
-
+	while index < size - 1:
+		print(index)
+		if L[index] != L[index + 1]:
+			result.append(L[index])
+			count = 0
+		else:
+			count += 1
+			if count == k - 1:
+				result.append(L[index])
+				count = 0
+				index += 2
+			else:
+				result.append(L[index])
+		print(result)
+		index += 1
 print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
 		
