@@ -37,6 +37,7 @@ def shortenlongruns(L, k):
 	for i in range(size - 1):
 		if L[i] == L[i+1]:
 			count += 1
+			print(count)
 			if count == k:
 				L.pop(i)
 				print(L)
