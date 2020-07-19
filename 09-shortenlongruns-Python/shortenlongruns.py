@@ -30,5 +30,7 @@ def shortenlongruns(L, k):
 				result.append(L[index])
 		print(result)
 		index += 1
+	result.append(L[-1])
+	return result
 print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
 		
