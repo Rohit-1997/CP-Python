@@ -16,6 +16,7 @@ def destructiveshortenlongruns(L, k):
 	count = 0
 	for i in range(len(L) - 1):
 		print(i)
+		print(L)
 		if i+1 >= len(L):
 			continue
 		if L[i] == L[i + 1]:
