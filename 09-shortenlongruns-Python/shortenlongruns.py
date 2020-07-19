@@ -10,5 +10,14 @@
 
 
 def shortenlongruns(L, k):
-	# Your code goes here
-	pass
+	size = len(L)
+	result_list = [None]*size
+
+	for i in range(len(L)):
+		if k not in result_list:
+			result_list[i] = L[i]
+
+	return result_list
+
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
+		
