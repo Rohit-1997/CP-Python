@@ -14,16 +14,15 @@
 
 def destructiveshortenlongruns(L, k):
 	count = 0
-	for i in range(len(L) - 1):
-		print(i)
-		print(L)
-		if i+1 >= len(L):
-			continue
-		if L[i] == L[i + 1]:
+	index = 0
+	aux_list = L[:]
+	while index < len(L) - 1:
+		if L[index] == L[index + 1]:
 			count += 1
 			if count == k - 1:
-				L.pop(i)
-	return L
+				aux_list.pop(index)
+				count = 0
+		index += 1
 
 print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 2))
 			
