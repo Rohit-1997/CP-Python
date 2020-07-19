@@ -33,17 +33,21 @@ def shortenlongruns(L, k):
 	# result.append(L[-1])
 	# return result
 
+	popped_index = []
 	count = 0
 	for i in range(size - 1):
 		if L[i] == L[i+1]:
 			count += 1
 			print(count)
-			if count == k:
+			if count == k - 1:
 				print("in here")
-				L.pop(i)
+				popped_index.append(i)
 				print(L)
 				count = 0
-	print(L)
+	
+	for index in popped_index:
+		L.pop(index)
+	
 	return L
 
 
