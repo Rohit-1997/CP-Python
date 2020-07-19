@@ -24,5 +24,5 @@ def destructiveshortenlongruns(L, k):
 				count = 0
 		index += 1
 	return aux_list
-print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 2))
+print(destructiveshortenlongruns([2, 3, 5, 5, 5, 3], 3))
 			
