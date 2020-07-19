@@ -47,13 +47,9 @@ def shortenlongruns(L, k):
 	
 	for index in popped_index:
 		L.pop(index)
-	
+
 	return L
 
 
-
-
-
-
-print(shortenlongruns([2, 3, 5, 5, 5, 3], 3))
+print(shortenlongruns([2, 3, 5, 5, 5, 3], 2))
 		
