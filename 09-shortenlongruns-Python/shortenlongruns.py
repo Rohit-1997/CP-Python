@@ -11,26 +11,42 @@
 
 def shortenlongruns(L, k):
 	size = len(L)
-	index = 0
-	count = 0
-	result = []
+	# index = 0
+	# count = 0
+	# result = []
 
-	while index < size - 1:
-		print(index)
-		if L[index] != L[index + 1]:
-			result.append(L[index])
-			count = 0
-		else:
+	# while index < size - 1:
+	# 	print(index)
+	# 	if L[index] != L[index + 1]:
+	# 		result.append(L[index])
+	# 		count = 0
+	# 	else:
+	# 		count += 1
+	# 		if count == k - 1:
+	# 			result.append(L[index])
+	# 			count = 0
+	# 			index += 2
+	# 		else:
+	# 			result.append(L[index])
+	# 	print(result)
+	# 	index += 1
+	# result.append(L[-1])
+	# return result
+
+	count = 0
+	for i in range(size - 1):
+		if L[i] == L[i+1]:
 			count += 1
-			if count == k - 1:
-				result.append(L[index])
+			if count == k:
+				L.pop(i)
 				count = 0
-				index += 2
-			else:
-				result.append(L[index])
-		print(result)
-		index += 1
-	result.append(L[-1])
-	return result
+	print(L)
+	return L
+
+
+
+
+
+
 print(shortenlongruns([2, 3, 5, 5, 5, 5], 4))
 		
