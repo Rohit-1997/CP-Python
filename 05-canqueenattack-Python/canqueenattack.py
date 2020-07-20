@@ -9,3 +9,5 @@ def canqueenattack(qR, qC, oR, oC):
 	if abs(qR-oR) == abs(qC - oC):
 		return True
 	return False
+
+print(canqueenattack(4, 5, 6, 7))
