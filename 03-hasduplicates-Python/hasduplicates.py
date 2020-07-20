@@ -4,5 +4,10 @@
 # if any two values in L are equal to each other), and False otherwise.
 
 def hasduplicates(L):
-	# Your code goes here
-	pass
+	aux_list = []
+
+	for list_data in l:
+		for number in list_data:
+			if number in aux_list:
+				return True
+	return False
