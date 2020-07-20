@@ -10,4 +10,4 @@ def canqueenattack(qR, qC, oR, oC):
 		return True
 	return False
 
-print(canqueenattack(4, 5, 6, 7))
+print(canqueenattack(1, 1, 3, 2))
