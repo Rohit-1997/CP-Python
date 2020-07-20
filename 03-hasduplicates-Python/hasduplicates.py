@@ -4,6 +4,8 @@
 # if any two values in L are equal to each other), and False otherwise.
 
 def hasduplicates(L):
+	if L == []:
+		return False
 	aux_list = []
 
 	for list_data in L:
