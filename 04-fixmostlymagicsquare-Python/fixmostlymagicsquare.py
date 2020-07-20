@@ -30,6 +30,7 @@ def get_index(data):
 def get_pos(row_sum, col_sum, diag_sum):
 	row_index = get_index(row_sum)
 	col_index = get_index(col_sum)
+	print("The common sum: ", row_index[1])
 	if row_index[0] == col_index[0] == -1:
 		return (-1,-1,row_index[1])
 	else:
