@@ -14,5 +14,14 @@
 # Each row and each column add to 3, but one diagonal adds to 2 and the other to 4.
 
 def ismostlymagicsquare(a):
-	# Your code goes here
-	pass
+	if a == [] or a == [[]]:
+		return False
+	row_sum = 0
+	col_sum = 0
+	diag_sum = 0
+
+	# row sum
+	for row_data in a:
+		current_row_sum = sum(row_data)
+
+		
