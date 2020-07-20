@@ -50,7 +50,7 @@ def fixmostlymagicsquare(L):
 
 	# col_sum
 	for j in range(len(L[0])):
-		col_sum_vlue = 0
+		col_sum_value = 0
 		for i in range(len(L)):
 			col_sum_value += L[i][j]
 		col_sum[j] = col_sum_value
