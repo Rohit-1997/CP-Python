@@ -71,7 +71,7 @@ def fixmostlymagicsquare(L):
 	postions = get_pos(row_sum, col_sum, diag_sum)
 	if postions[0] == postions[1] == -1:
 		return L
-	print(postions[2])
+	print("The found difference:", postions[2])
 	changed_number = postions[2] - L[postions[0]][postions[1]]
 	L[postions[0]][postions[1]] = changed_number
 	return L
