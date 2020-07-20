@@ -18,10 +18,49 @@ def ismostlymagicsquare(a):
 		return False
 	row_sum = 0
 	col_sum = 0
-	diag_sum = 0
+	diag_sum_one = 0
+	diag_sum_two = 0
 
 	# row sum
-	for row_data in a:
-		current_row_sum = sum(row_data)
+	for i in range(len(a)):
+		if i == 0:
+			row_sum = sum(a[i])
+		else:
+			if sum(a[i]) != row_sum:
+				return False
+	
+	# column sum
+	for j in range(len(a[0])):
+		current_col_sum = 0
+		for i in range(len(a)):
+			current_col_sum += a[i][j]
+		if j == 0:
+			col_sum = current_col_sum
+		elif current_col_sum != col_sum:
+				return False
+	
+	print("The row sum, column sum: ", row_sum, col_sum)
+
+
+	for i in range(len(a)):
+		diag_sum_one += a[i][i]
+	
+	for i in range(len(a)):
+		for j in range(len(a[0]) - 1, -1, -1):
+			diag_sum_two += a[i][j]
+	
+	if diag_sum_one != diag_sum_two:
+		return False
+	else:
+		return row_sum == col_sum == diag_sum_one
+
+
+			
+
+
+
+
+		
+
 
 		
