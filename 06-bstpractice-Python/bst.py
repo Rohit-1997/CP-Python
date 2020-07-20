@@ -34,10 +34,16 @@ class BST(object):
         while temproot != None:
             print(temproot.value)
             if new_val > temproot.value:
+                if temproot.right is None:
+                    temproot.right = new_node
+                    break
                 temproot = temproot.right
             else:
+                if temproot.left is None:
+                    temproot.left = new_node
+                    break
                 temproot = temproot.left
-        temproot = new_node
+        # temproot = new_node
         
 
     def printSelf(self):
