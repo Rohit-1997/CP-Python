@@ -12,6 +12,7 @@ def hasduplicates(L):
 		for number in list_data:
 			if number in aux_list:
 				return True
+			aux_list.append(number)
 	return False
 
 print(hasduplicates([[2, 7, 9], [9, 5, 1], [4, 3, 8]]))
