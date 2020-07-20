@@ -15,7 +15,7 @@ def get_index(data):
 	for ele in data:
 		dict_data[ele] += 1
 	max_value = max(dict_data.values())
-	
+	print(dict_data)
 	for key in dict_data:
 		if dict_data[key] != max_value:
 			number = key
