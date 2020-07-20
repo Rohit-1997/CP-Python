@@ -73,6 +73,8 @@ def fixmostlymagicsquare(L):
 	if postions[0] == postions[1] == -1:
 		return L
 	print("The found difference:", postions)
+	print("The array data: ")
+	print(row_sum, col_sum, diag_sum)
 	changed_number = postions[2] - L[postions[0]][postions[1]]
 	L[postions[0]][postions[1]] = changed_number
 	return L
