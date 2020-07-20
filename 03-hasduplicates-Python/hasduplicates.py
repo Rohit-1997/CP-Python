@@ -14,4 +14,4 @@ def hasduplicates(L):
 				return True
 	return False
 
-print(hasduplicates([[2, 7, 6], [9, 5, 1], [4, 3, 8]]))
+print(hasduplicates([[2, 7, 9], [9, 5, 1], [4, 3, 8]]))
