@@ -47,6 +47,7 @@ def ismostlymagicsquare(a):
 	
 	for i in range(len(a)):
 		for j in range(len(a[0]) - 1, -1, -1):
+			print(a[i][j])
 			diag_sum_two += a[i][j]
 	print("The diagonal sums: ", diag_sum_one, diag_sum_two)
 	if diag_sum_one != diag_sum_two:
