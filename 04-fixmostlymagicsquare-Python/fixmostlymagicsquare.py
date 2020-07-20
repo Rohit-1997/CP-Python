@@ -45,35 +45,35 @@ def fixmostlymagicsquare(L):
 
 
 	# row sum 
-	for i in range(len(a)):
+	for i in range(len(L)):
 		row_sum[i] = sum(L[i])
 
 	# col_sum
-	for j in range(len(a[0])):
-		col_sum_value = 0
-		for i in range(len(a)):
-			col_sum_value += a[i][j]
+	for j in range(len(L[0])):
+		col_sum_vlue = 0
+		for i in range(len(L)):
+			col_sum_value += L[i][j]
 		col_sum[j] = col_sum_value
 
 	diag_sum_one = 0
 	diag_sum_two = 0
-	for i in range(len(a)):
-		diag_sum_one += a[i][i]
+	for i in range(len(L)):
+		diag_sum_one += L[i][i]
 
 	i = 0
-	j = len(a) - 1
-	for i in range(len(a)):
-		diag_sum_two += a[i][j]
+	j = len(L) - 1
+	for i in range(len(L)):
+		diag_sum_two += L[i][j]
 		i += 1
 		j -= 1
 	diag_sum.append(diag_sum_one)
 	diag_sum.append(diag_sum_two)
 	postions = get_pos(row_sum, col_sum, diag_sum)
 	if postions[0] == postions[1] == -1:
-		return a
-	changed_number = postions[2] - a[postions[0]][postions[1]]
-	a[postions[0]][postions[1]] = changed_number
-	return a
+		return L
+	changed_number = postions[2] - L[postions[0]][postions[1]]
+	L[postions[0]][postions[1]] = changed_number
+	return L
 
 
 	
