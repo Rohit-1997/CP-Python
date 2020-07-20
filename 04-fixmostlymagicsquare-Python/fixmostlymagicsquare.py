@@ -21,7 +21,7 @@ def get_index(data):
 			number = key
 		else:
 			common_sum = key
-
+	print("The number: ", number)
 	if number == -1:
 		return -1
 	return [data.index(number), common_sum]
