@@ -33,7 +33,7 @@ def longestdigitrun(n):
 	print("The final result: ", final_result)
 	return int(min(final_result))
 
-print(longestdigitrun(44332211))
+print(longestdigitrun(123330001))
 
 
 	
