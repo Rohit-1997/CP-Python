@@ -28,5 +28,5 @@ def nthwithproperty309(n):
 		current_number += 1
 	return current_number - 1
 
-print(nthwithproperty309(1))
+print(nthwithproperty309(2))
 
