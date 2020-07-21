@@ -11,7 +11,7 @@ def is_valid(number):
 		digit = number % 10
 		digits_data[digit] = True
 		number = number // 10
-
+	print(digits_data)
 	return False in digits_data
 
 
