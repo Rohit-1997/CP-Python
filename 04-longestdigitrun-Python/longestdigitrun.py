@@ -9,7 +9,7 @@ def longestdigitrun(n):
 	current_count = 0
 	result = []
 	max_count = 0
-
+	print(n)
 	for i in range(len(n) - 1):
 		if n[i] == n[i + 1]:
 			current_count += 1
