@@ -52,10 +52,10 @@ def fun_nth_smithnumber(n):
         print("The current number: ", current_number)
         factors = get_prime_factors(current_number)
         if is_smith(current_number, factors):
-            print(current_number)
+            print("The smith number: ", current_number)
             counter += 1
         current_number += 1
     return current_number - 1
 
 
-print(fun_nth_smithnumber(2))
+print("The result: ", fun_nth_smithnumber(2))
