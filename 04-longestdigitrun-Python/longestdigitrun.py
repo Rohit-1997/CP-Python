@@ -17,11 +17,13 @@ def longestdigitrun(n):
 				result.append(int(n[i]))
 		else:
 			current_count = 0
-
+	print("The result: ", result)
 	if result == []:
 		return int(min(list(str(n))))
 
 	return min(result)
+
+print(longestdigitrun(112233455567))
 
 
 	
