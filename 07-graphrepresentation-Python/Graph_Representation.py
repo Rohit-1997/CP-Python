@@ -47,9 +47,13 @@ class Graph(object):
         adjacency_list = [None] * (len(self.nodes) + 1)
         for node in self.nodes:
             edges_list = node.edges
+            node_data = []
             print("For the node: ", node.value)
             for edge in edges_list:
                 print(edge.node_from.value, "--", edge.node_to.value)
+                if edge.node_from.value == node.value:
+                    node_data.append((edge.node_to.value, edge.value))
+            adjacency_list[node.value] = node_data
         return adjacency_list
     
     
