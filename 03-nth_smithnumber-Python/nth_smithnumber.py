@@ -7,6 +7,49 @@
 # so fun_nthsmithnumber(0) should return 4
 # so fun_nthsmithnumber(1) should return 22
 
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2,number):
+        if number % i == 0:
+            return False
+    return True
+
+
+def is_smith(num, factors):
+    factors_sum = 0
+    number_sum = 0
+    for number in factors:
+        while number > 0:
+            factors_sum += (number%10)
+            number = number // 10
+
+    while num > 0:
+        number_sum += (num%10)
+        num = num // 10
+
+    return number_sum == factors_sum
+
+
+def get_prime_factors(number):
+    result = []
+    for i in range(2, number):
+        if number % i == 0:
+            if is_prime(i):
+                result.append(i)
+    return result
+
 
 def fun_nth_smithnumber(n):
-    return 1
+    if n == 0:
+        return 4
+
+    smith_list = [4]
+    current_number = 5
+    counter = 0
+
+    while counter < n:
+        factors = get_prime_factors(current_number)
+        if is_smith(current_number, factors):
+            counter += 1
+    return current_number
