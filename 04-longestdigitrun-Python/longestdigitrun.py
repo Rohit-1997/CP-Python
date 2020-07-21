@@ -31,7 +31,7 @@ def longestdigitrun(n):
 		if result[key] == max_count_value:
 			final_result.append(key)
 	print("The final result: ", final_result)
-	return min(final_result)
+	return int(min(final_result))
 
 print(longestdigitrun(117773732))
 
