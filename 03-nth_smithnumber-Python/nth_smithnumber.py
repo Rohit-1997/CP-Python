@@ -56,7 +56,7 @@ def fun_nth_smithnumber(n):
     current_number = 5
     counter = 0
 
-    while counter < n - 1:
+    while counter < n:
         print("The current number: ", current_number)
         if is_prime(current_number):
             current_number += 1
