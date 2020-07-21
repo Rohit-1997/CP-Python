@@ -39,8 +39,8 @@ class Graph(object):
 
     def get_edge_list(self):
         edge_list = []
-        for node in self.nodes:
-            edge_list.append(node.edges)
+        for edge in self.edges:
+            edge_list.append((edge.value, edge.node_from, edge.node_to))
         return edge_list
 
     def get_adjacency_list(self):
@@ -58,4 +58,5 @@ graph.insert_edge(100, 1, 2)
 graph.insert_edge(101, 1, 3)
 graph.insert_edge(102, 1, 4)
 graph.insert_edge(103, 3, 4)
-print(graph.get_edge_list())
+result = graph.get_edge_list()
+print(result)
