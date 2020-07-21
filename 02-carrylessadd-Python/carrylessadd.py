@@ -27,5 +27,5 @@ def fun_carrylessadd(x, y):
 
 	print(result_list)
 	return int("".join(str(ele) for ele in result_list))
-print(fun_carrylessadd(785, 376))
+print(fun_carrylessadd(785, 76))
 
