@@ -20,7 +20,7 @@ def longestdigitrun(n):
 				result[n[i]] += 1
 		else:
 			current_count = 0
-		print("The max count: ", max_count)
+		print("The max count and current count: ", max_count, current_count)
 	print("The result: ", result)
 	if len(result.keys()) == 0:
 		return int(min(list(str(n))))
