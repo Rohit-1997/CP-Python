@@ -27,10 +27,10 @@ def longestdigitrun(n):
 		return int(min(list(str(n))))
 
 	final_result = []
-	max_count_value = max(result.values())
+	# max_count_value = max(result.values())
 
 	for key in result:
-		if result[key] == max_count_value:
+		if result[key] == max_count:
 			final_result.append(key)
 	print("The final result: ", final_result)
 	return int(min(final_result))
