@@ -12,7 +12,7 @@ def is_valid(number):
 		digits_data[digit] = True
 		number = number // 10
 	print(digits_data)
-	return False in digits_data
+	return False not in digits_data
 
 
 def nthwithproperty309(n):
@@ -23,7 +23,7 @@ def nthwithproperty309(n):
 
 	while counter < n:
 		number = current_number ** 5
-		if not is_valid(number):
+		if is_valid(number):
 			counter += 1
 		current_number += 1
 	return current_number - 1
