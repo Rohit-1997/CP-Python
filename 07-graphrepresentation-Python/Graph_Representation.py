@@ -59,10 +59,17 @@ class Graph(object):
                 adjacency_list[node.value] = node_data
         return [(adjacency_list,)]
     
-    
     def get_adjacency_matrix(self):
+        max_index = len(self.nodes)
         adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
-
+        
+        for node in self.nodes:
+            edges_list = node.edges
+            node_data = []
+            # print("For the node: ", node.value)
+            for edge in edges_list:
+                # print(edge.node_from.value, "--", edge.node_to.value)
+                adjacency_matrix[edge.node_from.value][edge.node_to.value] = edge.value
         return adjacency_matrix
 
 
