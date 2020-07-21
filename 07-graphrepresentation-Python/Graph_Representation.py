@@ -53,7 +53,10 @@ class Graph(object):
                 print(edge.node_from.value, "--", edge.node_to.value)
                 if edge.node_from.value == node.value:
                     node_data.append((edge.node_to.value, edge.value))
-            adjacency_list[node.value] = node_data
+            if node_data == []:
+                adjacency_list[node.value] = None
+            else:
+                adjacency_list[node.value] = node_data
         return adjacency_list
     
     
