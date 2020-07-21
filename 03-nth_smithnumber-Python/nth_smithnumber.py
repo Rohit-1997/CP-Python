@@ -53,7 +53,7 @@ def fun_nth_smithnumber(n):
         if is_smith(current_number, factors):
             counter += 1
         current_number += 1
-    return current_number
+    return current_number - 1
 
 
 print(fun_nth_smithnumber(1))
