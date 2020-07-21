@@ -18,6 +18,7 @@ def longestdigitrun(n):
 			if current_count >= max_count:
 				max_count = current_count
 				result[n[i]] += 1
+				print("The result after update: ", result)
 		else:
 			current_count = 0
 		print("The max count and current count: ", max_count, current_count)
