@@ -11,7 +11,7 @@ def fun_numberofpoolballrows(balls):
 
 	while ballcount < balls:
 		row_counter += 1
-		ballcount += (1*row_counter)
+		ballcount += (row_counter)
 	return row_counter
 
 
