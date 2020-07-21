@@ -23,7 +23,7 @@ def nthwithproperty309(n):
 
 	while counter < n:
 		number = current_number ** 5
-		if is_valid(number):
+		if not is_valid(number):
 			counter += 1
 		current_number += 1
 	return current_number - 1
