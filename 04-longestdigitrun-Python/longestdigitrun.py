@@ -18,6 +18,9 @@ def longestdigitrun(n):
 		else:
 			current_count = 0
 
+	if result == []:
+		return int(min(list(str(n))))
+
 	return min(result)
 
 
