@@ -6,7 +6,7 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	n = str(abs(n))
-	current_count = 1
+	current_count = 0
 	result = []
 	max_count = 0
 
