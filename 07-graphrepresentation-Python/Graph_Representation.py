@@ -57,7 +57,7 @@ class Graph(object):
                 adjacency_list[node.value] = None
             else:
                 adjacency_list[node.value] = node_data
-        return [(adjacency_list, )]
+        return [(adjacency_list,)]
     
     
     def get_adjacency_matrix(self):
