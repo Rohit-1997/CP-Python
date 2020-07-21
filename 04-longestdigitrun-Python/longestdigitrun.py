@@ -12,13 +12,11 @@ def longestdigitrun(n):
 	max_count = 0
 	print(n)
 	for i in range(len(n) - 1):
-		print("The elements under process: ", n[i], n[i + 1])
 		if n[i] == n[i + 1]:
 			current_count += 1
 			result[n[i]] += 1
 			if current_count >= max_count:
 				max_count = current_count
-			print("The result after update: ", result)
 		else:
 			current_count = 0
 
