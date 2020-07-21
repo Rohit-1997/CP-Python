@@ -14,8 +14,18 @@ def fun_carrylessadd(x, y):
 		result_list.insert(0,sum_digit)
 		x = x // 10
 		y = y // 10
-	
-	print(result_list)
 
+	while x != 0 and y == 0:
+		digit = x % 10
+		result_list.insert(0, digit)
+		x = x // 10
+
+	while y != 0 and x == 0:
+		digit = y % 10
+		result_list.append(0, digit)
+		y = y // 10
+
+	print(result_list)
+	return int("".join(str(ele) for ele in result_list))
 print(fun_carrylessadd(785, 376))
 
