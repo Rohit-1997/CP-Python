@@ -45,18 +45,21 @@ class Graph(object):
 
     def get_adjacency_list(self):
         adjacency_list = [None] * (len(self.nodes) + 1)
-        for node in self.nodes:
-            edges_list = node.edges
-            node_data = []
-            print("For the node: ", node.value)
-            for edge in edges_list:
-                print(edge.node_from.value, "--", edge.node_to.value)
-                if edge.node_from.value == node.value:
-                    node_data.append((edge.node_to.value, edge.value))
-            if node_data == []:
-                adjacency_list[node.value] = None
-            else:
-                adjacency_list[node.value] = node_data
+        # for node in self.nodes:
+        #     edges_list = node.edges
+        #     node_data = []
+        #     print("For the node: ", node.value)
+        #     for edge in edges_list:
+        #         print(edge.node_from.value, "--", edge.node_to.value)
+        #         if edge.node_from.value == node.value:
+        #             node_data.append((edge.node_to.value, edge.value))
+        #     if node_data == []:
+        #         adjacency_list[node.value] = None
+        #     else:
+        #         adjacency_list[node.value] = node_data
+        for edg in self.edges:
+            node_from, node_to = edg.node_from.value, edg.node_to.value
+            adjacency_list[node_from] = (node_to, edg.value)
         return adjacency_list
     
     def get_adjacency_matrix(self):
