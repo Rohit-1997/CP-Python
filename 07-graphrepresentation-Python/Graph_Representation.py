@@ -66,9 +66,9 @@ class Graph(object):
         for node in self.nodes:
             edges_list = node.edges
             node_data = []
-            # print("For the node: ", node.value)
+            print("For the node: ", node.value)
             for edge in edges_list:
-                # print(edge.node_from.value, "--", edge.node_to.value)
+                print(edge.node_from.value, "--", edge.node_to.value, ": ", edge.value)
                 adjacency_matrix[edge.node_from.value][edge.node_to.value] = edge.value
         return adjacency_matrix
 
