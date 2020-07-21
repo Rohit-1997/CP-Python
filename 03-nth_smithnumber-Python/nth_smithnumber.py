@@ -58,4 +58,5 @@ def fun_nth_smithnumber(n):
     return current_number - 1
 
 
-print("The result: ", fun_nth_smithnumber(3))
+# print("The result: ", fun_nth_smithnumber(3))
+print(get_prime_factors(27))
