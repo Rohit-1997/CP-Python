@@ -45,6 +45,11 @@ class Graph(object):
 
     def get_adjacency_list(self):
         adjacency_list = [None] * (max_index + 1)
+        for node in self.nodes:
+            edges_list = node.edges
+            print("For the node: ", node.value)
+            for edge in edges_list:
+                print(edge.node_from, "--", edge.node_to)
         return adjacency_list
     
     
