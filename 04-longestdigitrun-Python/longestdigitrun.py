@@ -21,18 +21,15 @@ def longestdigitrun(n):
 			print("The result after update: ", result)
 		else:
 			current_count = 0
-		print("The max count and current count: ", max_count, current_count)
-	print("The result: ", result)
+
 	if len(result.keys()) == 0:
 		return int(min(list(str(n))))
 
 	final_result = []
-	# max_count_value = max(result.values())
 
 	for key in result:
 		if result[key] == max_count:
 			final_result.append(key)
-	print("The final result: ", final_result)
 	return int(min(final_result))
 
 print(longestdigitrun(123330001))
