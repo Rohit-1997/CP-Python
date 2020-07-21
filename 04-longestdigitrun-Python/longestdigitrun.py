@@ -12,6 +12,7 @@ def longestdigitrun(n):
 	max_count = 0
 	print(n)
 	for i in range(len(n) - 1):
+		print("The elements under process: ", n[i], n[i + 1])
 		if n[i] == n[i + 1]:
 			current_count += 1
 			if current_count >= max_count:
