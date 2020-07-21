@@ -56,4 +56,4 @@ def fun_nth_smithnumber(n):
     return current_number - 1
 
 
-print(fun_nth_smithnumber(5))
+print(fun_nth_smithnumber(10))
