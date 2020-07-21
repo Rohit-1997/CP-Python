@@ -45,7 +45,7 @@ def fun_nth_smithnumber(n):
         return 4
 
     smith_list = [4]
-    current_number = 1
+    current_number = 5
     counter = 0
 
     while counter != n:
