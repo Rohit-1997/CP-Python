@@ -6,5 +6,16 @@
 
 
 def fun_carrylessadd(x, y):
-	return 0
+	result_list = []
+	while x > 0 and y > 0:
+		x_digit = x % 10
+		y_digit = y % 10
+		sum_digit = (x_digit + y_digit)%10
+		result_list.insert(0,sum_digit)
+		x = x // 10
+		y = y // 10
+	
+	print(result_list)
+
+print(fun_carrylessadd(785, 376))
 
