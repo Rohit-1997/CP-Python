@@ -49,6 +49,7 @@ def fun_nth_smithnumber(n):
     counter = 0
 
     while counter != n:
+        print("The current number: ", current_number)
         factors = get_prime_factors(current_number)
         if is_smith(current_number, factors):
             print(current_number)
