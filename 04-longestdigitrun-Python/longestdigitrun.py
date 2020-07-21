@@ -5,5 +5,20 @@
 # because there is a run of 3 consecutive 7's), 
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
-	# Your code goes here
-	pass
+	n = str(abs(n))
+	current_count = 0
+	result = []
+	max_count = 0
+
+	for i in range(len(n) - 1):
+		if n[i] == n[i + 1]:
+			current_count += 1
+			if current_count > max_count:
+				result.append(int(n[i]))
+		else:
+			current_count = 0
+
+	return min(result)
+
+
+	
