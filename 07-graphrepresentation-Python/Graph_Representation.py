@@ -49,7 +49,7 @@ class Graph(object):
             edges_list = node.edges
             print("For the node: ", node.value)
             for edge in edges_list:
-                print(edge.node_from, "--", edge.node_to)
+                print(edge.node_from.value, "--", edge.node_to.value)
         return adjacency_list
     
     
