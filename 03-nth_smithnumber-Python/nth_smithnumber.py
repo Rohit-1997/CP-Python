@@ -52,4 +52,8 @@ def fun_nth_smithnumber(n):
         factors = get_prime_factors(current_number)
         if is_smith(current_number, factors):
             counter += 1
+        current_number += 1
     return current_number
+
+
+print(fun_nth_smithnumber(1))
