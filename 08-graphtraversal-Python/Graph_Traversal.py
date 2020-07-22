@@ -184,6 +184,7 @@ class Graph(object):
             process_node = queue.pop(0)
             result.append(self.node_names[process_node.value])
             adj_list = self.get_adjacency_list()[start_node.value]
+            print("The neighbours for the node: ", process_node.value, adj_list)
             for adj_data in adj_list:
                 adj_node = self.find_node(adj_data[0])
                 if adj_node is not None and not adj_node.visited:
