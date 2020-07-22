@@ -174,7 +174,22 @@ class Graph(object):
         ARGUMENTS: start_node_num is the node number (integer)
         MODIFIES: the value of the visited property of nodes in self.nodes
         RETURN: a list of the node values (integers)."""
-        pass
+        start_node = self.find_node(start_node_num)
+        if not start_node:
+            return
+        queue = [start_node]
+        result = []
+        while queue != []:
+            process_node = queue.pop(0)
+            process_node.visited = True
+            result.append(self.node_names[process_node.value])
+            adj_list = self.get_adjacency_list()[start_node.value]
+            for adj_data in adj_list:
+                adj_node = self.find_node(adj_data[0])
+                if adj_node is not None and not adj_node.visited:
+                    queue.append(adj_node)
+        return result
+
 
     def bfs_names(self, start_node_num):
         """Return the results of bfs with numbers converted to names."""
@@ -202,6 +217,6 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
 
-print("The result of the dfs search is: ", graph.dfs(2))
+print("The result of the dfs search is: ", graph.bfs(2))
 
 
