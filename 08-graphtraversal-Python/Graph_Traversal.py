@@ -180,7 +180,7 @@ class Graph(object):
         queue = [start_node]
         start_node.visited = True
         result = []
-        while queue != []:
+        while len(queue) != 0:
             process_node = queue.pop(0)
             result.append(self.node_names[process_node.value])
             adj_list = self.get_adjacency_list()[start_node.value]
