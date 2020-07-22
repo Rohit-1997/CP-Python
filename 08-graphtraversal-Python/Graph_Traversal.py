@@ -142,8 +142,14 @@ class Graph(object):
         """
         print("The start node is: ", start_node.value)
         start_node.visited = True
+        node_name = self.node_names[start_node.value]
+        result_list.append(node_name)
         adj_list = self.get_adjacency_list()[start_node.value]
         print("The adj list: ", adj_list)
+        for data in adj_list:
+            node_value = self.find_node(data[0])
+            if node_value and not node_value.visited:
+                self.dfs_helper(node_value, result_list)
         return result_list
 
     def dfs(self, start_node_num):
@@ -196,6 +202,6 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London
 
-graph.dfs(2)
+print("The result of the dfs search is: ", graph.dfs(2))
 
 
