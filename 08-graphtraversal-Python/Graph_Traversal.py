@@ -178,16 +178,17 @@ class Graph(object):
         if not start_node:
             return
         queue = [start_node]
+        start_node.visited = True
         result = []
         while queue != []:
             process_node = queue.pop(0)
-            process_node.visited = True
             result.append(self.node_names[process_node.value])
             adj_list = self.get_adjacency_list()[start_node.value]
             for adj_data in adj_list:
                 adj_node = self.find_node(adj_data[0])
                 if adj_node is not None and not adj_node.visited:
                     queue.append(adj_node)
+                    adj_node.visited = True
         return result
 
 
