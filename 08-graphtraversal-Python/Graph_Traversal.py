@@ -143,7 +143,7 @@ class Graph(object):
         print("The start node is: ", start_node.value)
         start_node.visited = True
         adj_list = self.get_adjacency_list()
-        print("The adj list: ", adj_list)
+        print("The adj list: ", adj_list[start_node.value])
         return result_list
 
     def dfs(self, start_node_num):
