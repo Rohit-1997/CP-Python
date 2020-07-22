@@ -140,7 +140,7 @@ class Graph(object):
         MODIFIES: the value of the visited property of nodes in self.nodes 
         RETURN: a list of the traversed node values (integers).
         """
-        print("The start node is: ", start_node)
+        print("The start node is: ", start_node.value)
         return result_list
 
     def dfs(self, start_node_num):
