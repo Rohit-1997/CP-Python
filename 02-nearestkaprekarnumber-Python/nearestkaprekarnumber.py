@@ -51,4 +51,4 @@ def fun_nearestkaprekarnumber(n):
     print("The result is: ", result)
     return result
 
-print(fun_nearestkaprekarnumber(51))
+print(fun_nearestkaprekarnumber(50))
