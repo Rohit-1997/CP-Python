@@ -56,5 +56,5 @@ def fun_nth_lefttruncatableprime(n):
 
     return current_number - 2
 
-print(fun_nth_lefttruncatableprime(15))
+print(fun_nth_lefttruncatableprime(20))
 # print(is_valid(3))
