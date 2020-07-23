@@ -32,4 +32,6 @@ def fun_nth_kaprekarnumber(n):
         current_number += 1
     print("The result: ", current_number)
     return current_number-1
+
+print(fun_nth_kaprekarnumber(2))
     
