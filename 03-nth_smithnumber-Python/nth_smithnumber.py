@@ -70,4 +70,4 @@ def fun_nth_smithnumber(n):
 
 
 # print("The result: ", fun_nth_smithnumber(19))
-print(get_prime_factors(22))
+# print(get_prime_factors(22))
