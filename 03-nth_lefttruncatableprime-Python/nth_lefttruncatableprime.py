@@ -5,10 +5,33 @@
 # There are total 4260 left-truncatable primes.
 # So nthLeftTruncatablePrime(0) retunearestKaprekarNumber(n)rns 2, and 
 # nthLeftTruncatablePrime(10) returns 53.
-
-
-
 import math
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2,int(math.sqrt(number))):
+        if number % i == 0:
+            return False
+    return True
+
+def check_zeros(number):
+    if number == 0:
+        return True
+    while number > 0:
+        digit = number%10
+        if digit == 0:
+            return True
+        number = number // 10
+    return False
+
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    if n == 0:
+        return 2
+    current_number = 3
+    counter = 0
+
+    while counter < n:
+        if check_zeros(current_number):
+            current_number += 2
+            continue
