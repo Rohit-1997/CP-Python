@@ -39,7 +39,8 @@ def is_powerful(number):
 			return False
 	factors = set(factors)
 	for factor in factors:
-		if (factor**2)%number != 0:
+		squared = factor ** 2
+		if squared%number != 0:
 			return False
 	return True
 
