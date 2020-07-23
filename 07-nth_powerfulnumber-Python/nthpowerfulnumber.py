@@ -48,6 +48,7 @@ def nthpowerfulnumber(n):
 	current_number = 2
 	while counter < n:
 		if is_powerful(current_number):
+			print("The current powerful number: ", current_number)
 			counter += 1
 		current_number += 1
 	return current_number - 1
