@@ -34,7 +34,7 @@ def get_prime_factors(number):
 def is_powerful(number):
 	factors = get_prime_factors(number)
 	print('The prime factors for the numbers: ', number, factors)
-	for factor in factors:
+	for factor in set(factors):
 		if (factor**2)%number != 0:
 			return False
 	return True
