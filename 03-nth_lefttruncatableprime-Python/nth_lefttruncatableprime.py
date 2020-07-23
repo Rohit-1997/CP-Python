@@ -50,6 +50,7 @@ def fun_nth_lefttruncatableprime(n):
             current_number += 2
             continue
         if is_valid(current_number):
+            print("The valid numbers: ", current_number)
             counter += 1
         current_number += 2
 
