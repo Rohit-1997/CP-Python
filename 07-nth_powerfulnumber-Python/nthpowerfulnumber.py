@@ -61,4 +61,4 @@ def nthpowerfulnumber(n):
 		current_number += 1
 	return current_number - 1
 
-print(nthpowerfulnumber(5))
+print(nthpowerfulnumber(10))
