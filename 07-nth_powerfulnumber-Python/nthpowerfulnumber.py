@@ -42,7 +42,7 @@ def is_powerful(number):
 	factors = set(factors)
 	for factor in factors:
 		squared = factor ** 2
-		if squared%number != 0:
+		if number % squared != 0:
 			print("IN here")
 			return False
 	return True
