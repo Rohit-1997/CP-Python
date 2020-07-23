@@ -17,6 +17,7 @@ def is_valid(number):
     while right_part_count < digit_count:
         right_part_count += 1
         split_factor = 10**right_part_count
+        print("The split factor: ", split_factor)
         left_part = number_squared//split_factor
         right_part = number_squared%split_factor
         if left_part + right_part == number:
