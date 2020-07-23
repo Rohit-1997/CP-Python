@@ -52,3 +52,4 @@ def nthpowerfulnumber(n):
 		current_number += 1
 	return current_number - 1
 
+print(nthpowerfulnumber(1))
