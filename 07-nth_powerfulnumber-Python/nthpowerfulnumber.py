@@ -27,7 +27,7 @@ def get_prime_factors(number):
 			number = number // i
 
 	if number > 2:
-		factors.append[number]
+		factors.append(number)
 	return factors
 
 
@@ -52,4 +52,4 @@ def nthpowerfulnumber(n):
 		current_number += 1
 	return current_number - 1
 
-print(nthpowerfulnumber(1))
+print(nthpowerfulnumber(10))
