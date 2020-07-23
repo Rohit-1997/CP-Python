@@ -24,20 +24,10 @@ def is_valid(k):
 
 
 def fun_nth_carolprime(n):
-    if n == 0:
-        return 7
-    k = 2
-    counter = 0
-    while counter <= n:
-        valid, value = is_valid(k)
-        if valid:
-            print("The valid value and counter: ", value, counter)
-            counter += 1
-        k += 1
-    return value
+    return is_valid(n)
 
-# print(fun_nth_carolprime(3))
-print(is_prime(959))
+print(fun_nth_carolprime(3))
+# print(is_prime(959))
         
     
     
