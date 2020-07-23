@@ -9,5 +9,27 @@
 
 import math
 
+def is_valid(number):
+    number_squared = str(number**2)
+    number_length = len(number_squared)
+    if number_length == 1:
+        return False
+    left_half = int(number_squared[:number_length//2])
+    right_half = int(number_squared[number_length//2:number_length])
+    return (left_half + right_half) == number
+
+
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    if n == 0:
+        return 1
+
+    counter = 0
+    current_number = 2
+
+    while counter < n:
+        if is_valid(current_number):
+            counter += 1
+        current_number += 1
+    print("The result: ", current_number)
+    return current_number-1
+    
