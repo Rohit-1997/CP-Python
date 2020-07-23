@@ -35,7 +35,7 @@ def fun_nth_carolprime(n):
         k += 1
     return value
 
-print(fun_nth_carolprime(2))
+print(fun_nth_carolprime(1))
         
     
     
