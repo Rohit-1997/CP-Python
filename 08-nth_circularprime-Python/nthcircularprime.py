@@ -38,4 +38,4 @@ def nthcircularprime(n):
 		current_number += 2
 	return current_number - 2
 
-print(nthcircularprime(5))
+print(nthcircularprime(10))
