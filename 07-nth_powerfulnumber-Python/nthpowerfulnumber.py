@@ -41,6 +41,7 @@ def is_powerful(number):
 	for factor in factors:
 		squared = factor ** 2
 		if squared%number != 0:
+			print("IN here")
 			return False
 	return True
 
