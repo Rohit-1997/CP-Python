@@ -31,9 +31,10 @@ def fun_nth_carolprime(n):
     while counter < n:
         result = is_valid(k)
         counter += 1
+        k += 1
     return result
 
-print(fun_nth_carolprime(1))
+print(fun_nth_carolprime(3))
 # print(is_prime(959))
         
     
