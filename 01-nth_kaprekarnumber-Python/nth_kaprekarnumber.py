@@ -17,7 +17,7 @@ def is_valid(number):
     while right_part_count < digit_count:
         right_part_count += 1
         split_factor = 10**right_part_count
-        print("The split factor: ", split_factor)
+        # print("The split factor: ", split_factor)
         if split_factor == number:
             continue
         left_part = number_squared//split_factor
@@ -42,6 +42,6 @@ def fun_nth_kaprekarnumber(n):
         current_number += 1
     return current_number-1
 
-# print(fun_nth_kaprekarnumber(10))
-print(is_valid(1000))
+print(fun_nth_kaprekarnumber(10))
+# print(is_valid(1000))
     
