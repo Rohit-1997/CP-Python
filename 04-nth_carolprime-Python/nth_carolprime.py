@@ -36,7 +36,8 @@ def fun_nth_carolprime(n):
         k += 1
     return value
 
-print(fun_nth_carolprime(3))
+# print(fun_nth_carolprime(3))
+print(is_prime(959))
         
     
     
