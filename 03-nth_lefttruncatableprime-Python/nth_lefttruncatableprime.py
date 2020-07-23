@@ -24,6 +24,20 @@ def check_zeros(number):
         number = number // 10
     return False
 
+def is_valid(number):
+    digit_count = len(str(number))
+    if digit_count == 1:
+        return is_prime(number)
+    factor = 10**digit_count
+
+    while factor > 1:
+        current_number = number % factor
+        if not is_prime(current_number):
+            return False
+        digit_count -= 1
+        factor = 10**digit_count
+    return True
+
 
 def fun_nth_lefttruncatableprime(n):
     if n == 0:
@@ -35,3 +49,8 @@ def fun_nth_lefttruncatableprime(n):
         if check_zeros(current_number):
             current_number += 2
             continue
+        if is_valid(current_number):
+            counter += 1
+        current_number += 2
+
+    return current_number
