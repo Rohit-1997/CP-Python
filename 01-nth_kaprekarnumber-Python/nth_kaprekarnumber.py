@@ -18,6 +18,8 @@ def is_valid(number):
         right_part_count += 1
         split_factor = 10**right_part_count
         print("The split factor: ", split_factor)
+        if split_factor == number:
+            continue
         left_part = number_squared//split_factor
         right_part = number_squared%split_factor
         if left_part + right_part == number:
