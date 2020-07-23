@@ -42,6 +42,6 @@ def fun_nth_kaprekarnumber(n):
         current_number += 1
     return current_number-1
 
-print(fun_nth_kaprekarnumber(10))
+print(fun_nth_kaprekarnumber(15))
 # print(is_valid(1000))
     
