@@ -19,7 +19,7 @@ def is_prime(number):
 
 def is_valid(k):
     result = (((2**k) - 1)**2 - 2)
-    print("The k value and result: ", result, k)
+    print("The k value and result: ", k, result)
     return is_prime(result), result
 
 
