@@ -25,7 +25,7 @@ def is_valid(k):
 def fun_nth_carolprime(n):
     if n == 0:
         return 7
-    k = 2
+    k = 3
     counter = 0
     while counter < n:
         valid, value = is_valid(k)
