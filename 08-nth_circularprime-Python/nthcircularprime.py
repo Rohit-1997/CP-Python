@@ -8,7 +8,7 @@ import math
 def is_prime(number):
 	if number <= 1:
 		return False
-	for i in range(2,math.sqrt(number)+1):
+	for i in range(2,int(math.sqrt(number))+1):
 		if number % i == 0:
 			return False
 	return True
@@ -37,3 +37,5 @@ def nthcircularprime(n):
 			counter += 1
 		current_number += 2
 	return current_number - 2
+
+print(nthcircularprime(5))
