@@ -54,3 +54,5 @@ def fun_nth_lefttruncatableprime(n):
         current_number += 2
 
     return current_number
+
+print(fun_nth_lefttruncatableprime(3))
