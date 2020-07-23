@@ -30,7 +30,7 @@ def nthcircularprime(n):
 	if n == 0:
 		return 2
 	current_number = 3
-	counter = 1
+	counter = 0
 
 	while counter < n:
 		if is_valid(current_number):
