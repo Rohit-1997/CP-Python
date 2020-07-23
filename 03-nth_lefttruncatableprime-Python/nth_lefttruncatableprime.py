@@ -53,7 +53,7 @@ def fun_nth_lefttruncatableprime(n):
             counter += 1
         current_number += 2
 
-    return current_number
+    return current_number - 2
 
 # print(fun_nth_lefttruncatableprime(1))
 print(is_valid(3))
