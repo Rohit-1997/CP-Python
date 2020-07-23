@@ -10,13 +10,19 @@
 import math
 
 def is_valid(number):
-    number_squared = str(number**2)
-    number_length = len(number_squared)
-    if number_length == 1:
-        return False
-    left_half = int(number_squared[:number_length//2])
-    right_half = int(number_squared[number_length//2:number_length])
-    return (left_half + right_half) == number
+    number_squared = number**2
+    digit_count = len(str(number_squared))
+    right_part_count = 0
+
+    while right_part_count < digit_count:
+        right_part_count += 1
+        split_factor = 10**right_part_count
+        left_part = number_squared//split_factor
+        right_part = number_squared%split_factor
+        if left_part + right_part == number:
+            return True
+    return False
+
 
 
 def fun_nth_kaprekarnumber(n):
