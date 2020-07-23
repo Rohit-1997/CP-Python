@@ -34,6 +34,8 @@ def fun_nth_carolprime(n):
             counter += 1
         k += 1
     return value
+
+print(fun_nth_carolprime(3))
         
     
     
