@@ -29,8 +29,8 @@ def fun_nth_kaprekarnumber(n):
     while counter < n:
         if is_valid(current_number):
             counter += 1
+            print("The current k number: ", current_number)
         current_number += 1
-    print("The result: ", current_number)
     return current_number-1
 
 print(fun_nth_kaprekarnumber(10))
