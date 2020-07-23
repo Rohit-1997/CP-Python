@@ -55,4 +55,5 @@ def fun_nth_lefttruncatableprime(n):
 
     return current_number
 
-print(fun_nth_lefttruncatableprime(1))
+# print(fun_nth_lefttruncatableprime(1))
+print(is_valid(3))
