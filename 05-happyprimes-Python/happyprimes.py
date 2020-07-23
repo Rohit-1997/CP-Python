@@ -48,4 +48,4 @@ def ishappyprimenumber(n):
     else:
         return isHappyNumber(n)
 
-print(ishappyprimenumber(2))
+print(ishappyprimenumber(833))
