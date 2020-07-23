@@ -32,6 +32,8 @@ def get_prime_factors(number):
 
 
 def is_powerful(number):
+	if is_prime(number):
+		return False
 	factors = get_prime_factors(number)
 	print('The prime factors for the numbers: ', number, factors)
 	if len(factors) == 1:
