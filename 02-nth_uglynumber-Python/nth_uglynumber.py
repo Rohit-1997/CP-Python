@@ -38,3 +38,6 @@ def fun_nth_uglynumber(n):
             counter += 1
         current_number += 1
     return current_number - 1
+
+# print(fun_nth_uglynumber(11))
+print(is_ugly(15))
