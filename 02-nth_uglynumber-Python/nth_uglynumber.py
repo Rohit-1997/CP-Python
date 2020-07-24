@@ -22,7 +22,7 @@ def is_ugly(number):
     result = get_prime_factors(number)
     print("The prime factors: ", result)
     for ele in result:
-        if ele != 2 or ele != 3 or ele != 5:
+        if ele > 5:
             return False
     return True
 
