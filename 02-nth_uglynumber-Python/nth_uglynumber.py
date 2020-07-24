@@ -37,7 +37,8 @@ def fun_nth_uglynumber(n):
         if is_ugly(current_number):
             counter += 1
         current_number += 1
+    print("The nth ugly number: ", current_number - 1)
     return 0
 
-# print(fun_nth_uglynumber(11))
-print(is_ugly(15))
+print(fun_nth_uglynumber(11))
+# print(is_ugly(15))
