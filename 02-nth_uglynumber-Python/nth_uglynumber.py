@@ -41,5 +41,5 @@ def fun_nth_uglynumber(n):
     print("The nth ugly number: ", current_number - 1)
     return 0
 
-print(fun_nth_uglynumber(11))
+print(fun_nth_uglynumber(100))
 # print(is_ugly(15))
