@@ -13,7 +13,7 @@ def is_tidy(number):
     if size == 1:
         return True
     for i in range(size - 1):
-        if number[i] < number[i+1]:
+        if number[i] > number[i+1]:
             return False
     return True
 
@@ -25,6 +25,7 @@ def fun_nth_tidynumber(n):
     current_number = 2
     while counter < n:
         if is_tidy(current_number):
+            print("The current tidy ")
             counter += 1
         current_number += 1
     return current_number - 1
