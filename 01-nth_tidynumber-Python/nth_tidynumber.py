@@ -25,7 +25,7 @@ def fun_nth_tidynumber(n):
     current_number = 2
     while counter < n:
         if is_tidy(current_number):
-            print("The current tidy ")
+            print("The current tidy number: ", current_number)
             counter += 1
         current_number += 1
     return current_number - 1
