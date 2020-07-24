@@ -33,10 +33,10 @@ def fun_nth_uglynumber(n):
     current_number = 2
     counter = 0
 
-    # while counter < n:
-    #     if is_ugly(current_number):
-    #         counter += 1
-    #     current_number += 1
+    while counter < n:
+        if is_ugly(current_number):
+            counter += 1
+        current_number += 1
     return 0
 
 # print(fun_nth_uglynumber(11))
