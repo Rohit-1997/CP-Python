@@ -13,7 +13,7 @@ def nthautomorphicnumbers(n):
 	if n == 1:
 		return 0
 	current_number = 1
-	counter = 0
+	counter = 1
 
 	while counter < n:
 		if is_valid(current_number):
@@ -24,4 +24,3 @@ def nthautomorphicnumbers(n):
 
 		
 print(nthautomorphicnumbers(2))
-# print(is_valid(740081787109376))
