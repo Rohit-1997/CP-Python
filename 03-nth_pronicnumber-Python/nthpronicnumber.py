@@ -14,6 +14,8 @@ def nthpronicnumber(n):
 	while counter < n:
 		result = prev_number * current_number
 		counter += 1
+		prev_number = current_number
+		current_number += 1
 	return result
 
 print(nthpronicnumber(2))
