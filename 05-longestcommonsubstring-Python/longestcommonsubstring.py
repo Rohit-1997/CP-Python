@@ -47,7 +47,7 @@ def longestcommonsubstring(s1, s2):
     return result[::-1]
 
 
-print(longestcommonsubstring("abcABC", "zzabZZAB"))
+print(longestcommonsubstring("abcdef", "ghi"))
     
     
 
