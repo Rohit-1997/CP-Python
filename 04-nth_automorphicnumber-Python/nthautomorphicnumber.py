@@ -18,6 +18,7 @@ def nthautomorphicnumbers(n):
 
 	while counter < n:
 		squared = current_number ** 2
+		print("The current number and squared: ", current_number, squared)
 		if len(str(squared)) >= 2:
 			if squared % 100 == 25 or squared % 100 == 76:
 				result = current_number
@@ -26,6 +27,7 @@ def nthautomorphicnumbers(n):
 			if squared%10 == current_number:
 				result = current_number
 				counter += 1
+		print("The current result: ", result)
 		current_number += 1
 	return result
 
