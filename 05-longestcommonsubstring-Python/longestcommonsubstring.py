@@ -27,6 +27,9 @@ def longestcommonsubstring(s1, s2):
                     row_des = i
                     col_des = j
                     max_value = dp_table[i][j]
+    
+    if max_value == 0:
+        return ""
 
     # the last character
     print("The dp table: ", dp_table)
