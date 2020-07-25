@@ -27,5 +27,5 @@ def nthlychrelnumbers(n):
 	return current_number - 1
 
 
-print(nthlychrelnumbers(2))
+print(nthlychrelnumbers(3))
 # print(is_valid(3675))
