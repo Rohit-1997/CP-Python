@@ -16,7 +16,7 @@ def is_valid(number):
 def nthlychrelnumbers(n):
 	if n == 1:
 		return 196
-	counter = 1
+	counter = 0
 	current_number = 197
 
 	while counter < n:
