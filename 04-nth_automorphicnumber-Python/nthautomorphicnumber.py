@@ -14,13 +14,16 @@ def nthautomorphicnumbers(n):
 		return 0
 	current_number = 1
 	counter = 1
+	result = 0
 
 	while counter < n:
-		if is_valid(current_number):
-			print("The current number: ", current_number)
-			counter += 1
+		if (current_number**2)%10 == current_number % 10:
+			if is_valid(current_number):
+				print("The current number: ", current_number)
+				result = current_number
+				counter += 1
 		current_number += 1
-	return current_number - 1
+	return result
 
 		
 print(nthautomorphicnumbers(10))
