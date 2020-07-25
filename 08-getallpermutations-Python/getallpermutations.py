@@ -18,7 +18,7 @@ def getallpermutations(x):
 	size_x = len(x)
 	current_list = list(x)
 	helper(current_list, 0, size_x-1,result_list)
-	print("The result: ", result_list)
+	# print("The result: ", result_list)
 	return result_list
 
 print(getallpermutations('abcd'))
