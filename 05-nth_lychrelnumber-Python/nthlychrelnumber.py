@@ -2,9 +2,30 @@
 # A Lychrel number is a natural number that cannot form a palindrome through the iterative process of 
 # repeatedly reversing its digits and adding the resulting numbers. This process is sometimes called the 
 # 196-algorithm, after the most famous number associated with the process.
-# The first few Lychrel numbers are 196, 295, 394, 493, 592, 689, 691, 788, 790, 879, 887….
+# def reverse()
+
+def is_valid(number):
+	for i in range(25):
+		reverse_number = int(str(number)[::-1])
+		number += number
+		if (str(number)) == str(number)[::-1]:
+			return False
+	return True
 
 
 def nthlychrelnumbers(n):
-	# your code goes here
-	pass
+	if n == 1:
+		return 196
+	counter = 1
+	current_number = 197
+
+	while counter < n:
+		if is_valid(current_number):
+			print('The current number: ', current_number)
+			counter += 1
+		current_number += 1
+	return current_number - 1
+
+
+print(nthlychrelnumbers(22))
+# print(is_valid(3675))
