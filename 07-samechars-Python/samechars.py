@@ -20,4 +20,4 @@ def samechars(s1, s2):
 
 	return True
 
-print(samechars("abcabcabc", "cbad"))
+print(samechars("abcabcabc", "cBa"))
