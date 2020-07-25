@@ -20,6 +20,8 @@ def leastfrequentletters(s):
 			dict_data[element] += 1
 		
 	print('The dict data: ', dict_data)
+	if len(dict_data) == 0:
+		return ""
 	min_value = min(dict_data.values())
 	result = []
 	for key in dict_data:
