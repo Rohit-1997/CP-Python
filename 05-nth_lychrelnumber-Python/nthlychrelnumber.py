@@ -7,7 +7,7 @@
 def is_valid(number):
 	for i in range(25):
 		reverse_number = int(str(number)[::-1])
-		number += number
+		number += reverse_number
 		if str(number) == str(number)[::-1]:
 			return False
 	return True
