@@ -6,5 +6,16 @@
 # parameter is not a string, but returns True if both strings are empty (why?).
 
 def samechars(s1, s2):
-	# Your code goes here
-	pass
+	if s1 == s2 == "":
+		return True
+	if type(s1) != str or type(s2) != str:
+		return False
+	for ele in s1:
+		if ele not in s2:
+			return False
+	
+	for ele in s2:
+		if ele not in s1:
+			return False
+
+	return True
