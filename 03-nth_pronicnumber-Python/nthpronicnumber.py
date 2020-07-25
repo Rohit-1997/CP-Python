@@ -18,4 +18,4 @@ def nthpronicnumber(n):
 		current_number += 1
 	return result
 
-print(nthpronicnumber(2))
+print(nthpronicnumber(1))
