@@ -20,7 +20,7 @@ def longestcommonsubstring(s1, s2):
     # building the tabel to find the max common string
     for i in range(1,s1_size+1):
         for j in range(1,s2_size+1):
-            print("The current comparision: ", s1[i-1], s2[j-1])
+            # print("The current comparision: ", s1[i-1], s2[j-1])
             if s1[i-1] == s2[j-1]:
                 dp_table[i][j] = 1 + dp_table[i-1][j-1]
                 if dp_table[i][j] >= max_value:
