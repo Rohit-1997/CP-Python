@@ -23,7 +23,7 @@ def longestcommonsubstring(s1, s2):
             print("The current comparision: ", s1[i-1], s2[j-1])
             if s1[i-1] == s2[j-1]:
                 dp_table[i][j] = 1 + dp_table[i-1][j-1]
-                if dp_table[i][j] > max_value:
+                if dp_table[i][j] >= max_value:
                     row_des = i
                     col_des = j
                     max_value = dp_table[i][j]
