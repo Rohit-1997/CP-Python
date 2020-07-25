@@ -18,20 +18,25 @@ def longestcommonsubstring(s1, s2):
     col_des = -1
 
     # building the tabel to find the max common string
-    for i in range(1,s1_size):
-        for j in range(1,s2_size):
+    for i in range(1,s1_size+1):
+        for j in range(1,s2_size+1):
+            print("The current comparision: ", s1[i-1], s2[j-1])
             if s1[i-1] == s2[j-1]:
                 dp_table[i][j] = 1 + dp_table[i-1][j-1]
                 if dp_table[i][j] > max_value:
-                    row_des,col_des = i,j
+                    row_des = i
+                    col_des = j
                     max_value = dp_table[i][j]
 
     # the last character
+    print("The dp table: ", dp_table)
+    print("The max value: ", max_value)
+    print("The row and col value: ", row_des, col_des)
     current_cell_value = dp_table[row_des][col_des]
     result = ""
 
     while current_cell_value != 0:
-        result += s1[col_des - 1]
+        result += s2[col_des - 1]
         row_des -= 1
         col_des -= 1
         current_cell_value = dp_table[row_des][col_des]
@@ -39,7 +44,7 @@ def longestcommonsubstring(s1, s2):
     return result[::-1]
 
 
-print("abcdef", "abqrcdest")
+print(longestcommonsubstring("abcdef", "abqrcdest"))
     
     
 
