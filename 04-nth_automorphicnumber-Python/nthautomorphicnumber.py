@@ -17,10 +17,11 @@ def nthautomorphicnumbers(n):
 
 	while counter < n:
 		if is_valid(current_number):
+			print("The current number: ", current_number)
 			counter += 1
 		current_number += 1
 	return 0
 
 		
-# print(nthautomorphicnumbers(2))
-print(is_valid(740081787109376))
+print(nthautomorphicnumbers(2))
+# print(is_valid(740081787109376))
