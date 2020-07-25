@@ -15,8 +15,8 @@ def leastfrequentletters(s):
 
 	for ele in s:
 		if ((ele >= 'a' and ele <= 'z') or (ele >= 'A' and ele <= 'Z')):
-			ele.lower()
-			print("The element: ", ele)
+			element = ele.lower()
+			print("The element: ", element)
 			dict_data[ele] += 1
 		
 	print('The dict data: ', dict_data)
