@@ -8,5 +8,10 @@
 # longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab"
 
 def longestcommonsubstring(s1, s2):
-    # Yourcode goes here
-    pass
+    if s1 == "" or s2 == "":
+        return ""
+    s1_size = len(s1)
+    s2_size = len(s2)
+    dp_table = [[0 for j in range(s2_size)] for i in range(s1_size)]
+
+
