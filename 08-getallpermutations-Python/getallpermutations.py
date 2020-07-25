@@ -21,4 +21,4 @@ def getallpermutations(x):
 	# print("The result: ", result_list)
 	return result_list
 
-print(getallpermutations('xy'))
+print(getallpermutations('abcd'))
