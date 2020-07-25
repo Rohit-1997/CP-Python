@@ -13,7 +13,7 @@ def nthautomorphicnumbers(n):
 	if n == 1:
 		return 0
 	current_number = 5
-	counter = 1
+	counter = 0
 
 	while counter < n:
 		if is_valid(current_number):
