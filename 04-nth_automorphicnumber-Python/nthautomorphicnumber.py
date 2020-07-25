@@ -20,7 +20,7 @@ def nthautomorphicnumbers(n):
 			print("The current number: ", current_number)
 			counter += 1
 		current_number += 1
-	return 0
+	return current_number - 1
 
 		
 print(nthautomorphicnumbers(2))
