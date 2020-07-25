@@ -4,6 +4,7 @@
 def helper(current_list, index, size_x,result_list):
 	if index == size_x:
 		res = tuple(current_list)
+		print("The result tuple: ", res)
 		result_list.append(res)
 	for i in range(index, size_x+1):
 		current_list[index], current_list[i] = current_list[i], current_list[index]
@@ -12,7 +13,7 @@ def helper(current_list, index, size_x,result_list):
 
 
 def getallpermutations(x):
-	print("The value of x: ", x)
+	# print("The value of x: ", x)
 	result_list = []
 	size_x = len(x)
 	current_list = list(x)
