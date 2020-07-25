@@ -19,7 +19,8 @@ def nthautomorphicnumbers(n):
 		if is_valid(current_number):
 			counter += 1
 		current_number += 1
-	return current_number - 1
+	return 0
 
 		
-print(nthautomorphicnumbers(2))
+# print(nthautomorphicnumbers(2))
+print()
