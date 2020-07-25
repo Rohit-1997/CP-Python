@@ -17,10 +17,12 @@ def nthautomorphicnumbers(n):
 	result = 0
 
 	while counter < n:
-		if (current_number**2)%10 == current_number % 10:
-			if is_valid(current_number):
-				print("The current number: ", current_number)
-				result = current_number
+		squared = current_number ** 2
+		if len(str(squared)) >= 2:
+			if squared % 100 == 25 or squared % 100 == 76:
+				counter += 1
+		else:
+			if squared%10 == current_number:
 				counter += 1
 		current_number += 1
 	return result
