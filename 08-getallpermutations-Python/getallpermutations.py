@@ -3,8 +3,8 @@
 # your program should print all 6 permutations e.g. [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
 def helper(current_list, index, size_x,result_list):
 	if index == size_x:
-		res = "".join(current_list)
-		result_list.append((res,))
+		res = tuple(current_list)
+		result_list.append(res)
 	for i in range(index, size_x+1):
 		current_list[index], current_list[i] = current_list[i], current_list[index]
 		helper(current_list, index+1, size_x,result_list)
