@@ -12,7 +12,7 @@ def is_valid(number):
 def nthautomorphicnumbers(n):
 	if n == 1:
 		return 0
-	current_number = 5
+	current_number = 1
 	counter = 0
 
 	while counter < n:
@@ -23,4 +23,4 @@ def nthautomorphicnumbers(n):
 
 		
 # print(nthautomorphicnumbers(2))
-print(is_valid(6))
+print(is_valid(1))
