@@ -22,4 +22,4 @@ def nthautomorphicnumbers(n):
 	return current_number - 1
 
 		
-print(nthautomorphicnumbers(3))
+print(nthautomorphicnumbers(2))
