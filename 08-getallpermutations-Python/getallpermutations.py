@@ -20,3 +20,5 @@ def getallpermutations(x):
 	helper(current_list, 0, size_x-1,result_list)
 	print("The result: ", result_list)
 	return result_list
+
+print(getallpermutations('abc'))
