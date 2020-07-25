@@ -6,7 +6,27 @@
 # returns "be". Note that digits, punctuation, and whitespace are not letters! Also note that seeing as we have not 
 # yet covered lists, sets, maps, or efficiency, you are not expected to write the most efficient solution. Finally, 
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
+from collections import defaultdict
 
 def leastfrequentletters(s):
-	# Your code goes here
-	pass
+	if s == "":
+		return ""
+	dict_data = defaultdict(int)		# to store the count
+
+	for ele in s:
+		if ((ele >= 'a' and ele <= 'z') or (ele >= 'A' and ele <= 'Z')):
+			dict_data[ele] += 1
+		
+	min_value = min(dict_data.values())
+	result = []
+	for key in dict_data:
+		if key != '':
+			if dict_data[key] == min_value:
+				result.append(key)
+
+	result.sort()
+	return "".join(result)
+
+print(leastfrequentletters("aDq efQ? FB'daf!!!"))
+
+
