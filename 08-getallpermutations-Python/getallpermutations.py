@@ -25,4 +25,4 @@ def getallpermutations(x):
 	result_list.sort()
 	return result_list
 
-print(getallpermutations('ab'))
+print(getallpermutations('abc'))
