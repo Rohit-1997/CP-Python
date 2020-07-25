@@ -12,8 +12,7 @@ def helper(current_list, index, size_x,result_list):
 
 
 def getallpermutations(x):
-	if x == "":
-		return []
+	print("The value of x: ", x)
 	result_list = []
 	size_x = len(x)
 	current_list = list(x)
