@@ -23,4 +23,4 @@ def nthautomorphicnumbers(n):
 
 		
 # print(nthautomorphicnumbers(2))
-print(is_valid(5))
+print(is_valid(6))
