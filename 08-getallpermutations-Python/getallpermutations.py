@@ -2,14 +2,17 @@
 # Write an efficient program to print all permutations of a given String. For example, if given input is "abc" then 
 # your program should print all 6 permutations e.g. [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
 def helper(current_list, index, size_x,result_list):
+	print("The current list: ", current_list)
 	if index == size_x:
 		res = tuple(current_list)
 		# print("The result tuple: ", res)
 		result_list.append(res)
 	for i in range(index, size_x+1):
 		current_list[index], current_list[i] = current_list[i], current_list[index]
+		print('The list after swap: ', current_list)
 		helper(current_list, index+1, size_x,result_list)
 		current_list[index], current_list[i] = current_list[i], current_list[index]
+		print("The list after backtracking: ", current_list)
 
 
 def getallpermutations(x):
@@ -22,4 +25,4 @@ def getallpermutations(x):
 	result_list.sort()
 	return result_list
 
-print(getallpermutations('abcd'))
+print(getallpermutations('ab'))
