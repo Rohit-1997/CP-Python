@@ -20,4 +20,4 @@ def samechars(s1, s2):
 
 	return True
 
-print(samechars("abcabcabc", "cBa"))
+print(samechars(42,"The other parameter is not a string"))
