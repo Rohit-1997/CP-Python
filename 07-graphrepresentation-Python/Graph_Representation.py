@@ -85,5 +85,5 @@ graph.insert_edge(103, 3, 4)
 # print(graph.get_edge_list())
 print(graph.get_adjacency_list())
 
-for edge in graph.edges:
-    print(edge.node_from.value, '-->', edge.node_to.value, ': ', edge.value)
+# for edge in graph.edges:
+    # print(edge.node_from.value, '-->', edge.node_to.value, ': ', edge.value)
