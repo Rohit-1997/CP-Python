@@ -44,29 +44,24 @@ class Graph(object):
         return edge_list
 
     def get_adjacency_list(self):
-        # adjacency_list = [None] * (len(self.nodes) + 1)
-        max_index = self.find_max_index()
-        adjacency_list = [[] for _ in range(max_index)]
-        for edg in self.edges:
-            from_value, to_value = edg.node_from.value, edg.node_to.value
-            adjacency_list[from_value].append((to_value, edg.value))
-        return [a or None for a in adjacency_list] # replace []'s with None
-        # for node in self.nodes:
-        #     edges_list = node.edges
-        #     node_data = []
-        #     print("For the node: ", node.value)
-        #     for edge in edges_list:
-        #         print(edge.node_from.value, "--", edge.node_to.value)
-        #         if edge.node_from.value == node.value:
-        #             node_data.append((edge.node_to.value, edge.value))
-        #     if node_data == []:
-        #         adjacency_list[node.value] = None
-        #     else:
-        #         adjacency_list[node.value] = node_data
+        adjacency_list = [None] * (len(self.nodes) + 1)
+
+        for node in self.nodes:
+            edges_list = node.edges
+            node_data = []
+            print("For the node: ", node.value)
+            for edge in edges_list:
+                print(edge.node_from.value, "--", edge.node_to.value)
+                if edge.node_from.value == node.value:
+                    node_data.append((edge.node_to.value, edge.value))
+            if node_data == []:
+                adjacency_list[node.value] = None
+            else:
+                adjacency_list[node.value] = node_data
         # for edg in self.edges:
         #     node_from, node_to = edg.node_from.value, edg.node_to.value
         #     adjacency_list[node_from] = (node_to, edg.value)
-        # return adjacency_list
+        return adjacency_list
     
     def get_adjacency_matrix(self):
         max_index = len(self.nodes)
@@ -88,7 +83,7 @@ graph.insert_edge(101, 1, 3)
 graph.insert_edge(102, 1, 4)
 graph.insert_edge(103, 3, 4)
 # print(graph.get_edge_list())
-# print(graph.get_adjacency_list())
+print(graph.get_adjacency_list())
 
 for edge in graph.edges:
     print(edge.node_from.value, '-->', edge.node_to.value, ': ', edge.value)
